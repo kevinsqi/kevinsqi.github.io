@@ -3,7 +3,7 @@
   "description": "Kevin Qi's website",
   "private": true,
   "scripts": {
-    "build": "webpack",
+    "build": "webpack -p",
     "clean": "rimraf build",
     "lint": "eslint src test",
     "prestart": "npm install",
