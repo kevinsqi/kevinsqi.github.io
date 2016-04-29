@@ -1,13 +1,13 @@
 {
-  "name": "YOUR_PROJECT_NAME",
-  "description": "YOUR_DESCRIPTION",
+  "name": "iqnivek.github.io",
+  "description": "Kevin Qi's website",
   "private": true,
   "scripts": {
-    "clean": "rm -rf dist/*.js",
-    "lint": "eslint . ./",
+    "build": "webpack",
+    "clean": "rimraf build",
+    "lint": "eslint src test",
     "prestart": "npm install",
-    "shrinkwrap": "rm -f npm-shrinkwrap.json && npm install && npm-shrinkwrap --dev",
-    "start": "webpack --watch"
+    "start": "webpack-dev-server --progress"
   },
   "dependencies": {
     "moment": "^2.12.0",
@@ -30,8 +30,10 @@
     "node-sass": "^3.4.2",
     "npm-shrinkwrap": "^200.0.0",
     "react-addons-test-utils": "^15.0.0",
+    "rimraf": "^2.5.2",
     "sass-loader": "^3.1.2",
     "style-loader": "^0.13.0",
-    "webpack": "^1.12.9"
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.1"
   }
 }

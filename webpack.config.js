@@ -1,12 +1,10 @@
-// TODO add ExtractTextPlugin, see https://github.com/bensmithett/webpack-css-example/blob/master/webpack.config.js
-
 module.exports = {
   context: __dirname,
   entry: './src/index.jsx',
   output: {
-    filename: 'bundle.js',
-    path: './dist',
-    publicPath: '/dist'
+    path: './build',
+    publicPath: '/assets/',
+    filename: 'index.js',
   },
   resolve: {
     extensions: ['', '.js', '.jsx', '.scss'],
