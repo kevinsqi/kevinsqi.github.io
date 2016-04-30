@@ -18,7 +18,7 @@ const Project = ({ name, image, url, links, children }) => {
         {children}
 
         <ul className="list-unstyled m-t-1">
-          {links.map(({ text, url, icon }) => <li><i className={`text-muted fa ${icon || 'fa-external-link'}`}></i> <a className="m-l-1" href={url}>{text}</a></li>)}
+          {links.map(({ text, url, icon }) => <li><i className={`text-muted fa ${icon || 'fa-external-link'}`} style={{ width: '1em', marginRight: '0.3em' }}></i> <a href={url}>{text}</a></li>)}
         </ul>
       </div>
     </div>
@@ -41,7 +41,7 @@ class App extends React.Component {
         </nav>
 
         <div className="container">
-          <h2>Projects</h2>
+          <h2 className="m-b-1">Projects</h2>
           <section>
             <Project
               name="react-calendar-heatmap"
