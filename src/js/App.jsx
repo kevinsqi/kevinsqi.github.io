@@ -34,13 +34,24 @@ class App extends React.Component {
         <h2>Projects</h2>
         <section>
           <Project
+            name="react-calendar-heatmap"
+            image="assets/react_calendar_heatmap.png"
+            links={[
+              { text: 'Github repo', url: 'https://github.com/patientslikeme/react-calendar-heatmap' },
+              { text: 'Demo page', url: 'http://patientslikeme.github.io/react-calendar-heatmap/' },
+            ]}
+          >
+            An open source calendar heatmap component inspired by github's contribution graph, available on NPM. Built with React and SVG.
+          </Project>
+
+          <Project
             name="EventMapper"
             image="assets/eventmapper.png"
             links={[
               { text: 'View site', url: 'http://eventmapper.net' }
             ]}
           >
-            Browsing concert listings can be a mess, so I built a site that maps out concerts ranked by popularity. Built with Rails and the Songkick API.
+            A site that puts concerts on a map, ranked by popularity. Built with Rails and the Songkick API.
           </Project>
 
           <Project
