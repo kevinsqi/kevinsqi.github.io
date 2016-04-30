@@ -32,6 +32,10 @@ class App extends React.Component {
         <nav className="navbar navbar-light bg-faded m-b-2">
           <div className="container">
             <a className="navbar-brand" href="/">Kevin Qi</a>
+            <div className="nav navbar-nav pull-sm-right">
+              <a className="nav-item nav-link" href="https://github.com/iqnivek">Github</a>
+              <a className="nav-item nav-link" href="assets/kevin_qi_resume.pdf">Resume <i className="fa fa-file-pdf-o"></i></a>
+            </div>
           </div>
         </nav>
 
