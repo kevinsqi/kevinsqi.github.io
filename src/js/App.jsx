@@ -2,23 +2,28 @@ import '../styles/components/app';
 
 import React from 'react';
 
-const Project = ({ name, image, url, links, children }) => (
-  <div className="row m-b-1">
-    <div className="col-sm-6">
-      <div className="text-xs-center">
-        <img className="img-fluid img-rounded m-b-1" src={image} />
+const Project = ({ name, image, url, links, children }) => {
+  const primaryUrl = links[0].url;
+  return (
+    <div className="row m-b-1">
+      <div className="col-sm-6">
+        <div className="text-xs-center">
+          <a href={primaryUrl}>
+            <img className="img-fluid img-rounded m-b-1" src={image} />
+          </a>
+        </div>
+      </div>
+      <div className="col-sm-6">
+        <h3><a href={primaryUrl}>{name}</a></h3>
+        {children}
+
+        <ul className="list-unstyled m-t-1">
+          {links.map(({ text, url }) => <li><a href={url}>{text}</a></li>)}
+        </ul>
       </div>
     </div>
-    <div className="col-sm-6">
-      <h2>{name}</h2>
-      {children}
-
-      <ul className="list-unstyled m-t-1">
-        {links.map(({ text, url }) => <li><a href={url}>{text}</a></li>)}
-      </ul>
-    </div>
-  </div>
-);
+  );
+};
 
 class App extends React.Component {
   render() {
