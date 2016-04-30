@@ -18,7 +18,7 @@ const Project = ({ name, image, url, links, children }) => {
         {children}
 
         <ul className="list-unstyled m-t-1">
-          {links.map(({ text, url }) => <li><a href={url}>{text}</a></li>)}
+          {links.map(({ text, url, icon }) => <li><i className={`text-muted fa ${icon || 'fa-external-link'}`}></i> <a className="m-l-1" href={url}>{text}</a></li>)}
         </ul>
       </div>
     </div>
@@ -37,7 +37,7 @@ class App extends React.Component {
             name="react-calendar-heatmap"
             image="assets/react_calendar_heatmap.png"
             links={[
-              { text: 'Github repo', url: 'https://github.com/patientslikeme/react-calendar-heatmap' },
+              { text: 'Github repo', url: 'https://github.com/patientslikeme/react-calendar-heatmap', icon: 'fa-github' },
               { text: 'Demo page', url: 'http://patientslikeme.github.io/react-calendar-heatmap/' },
             ]}
           >
@@ -58,8 +58,8 @@ class App extends React.Component {
             name="Save Tabbed Images"
             image="assets/save_tabbed_images.png"
             links={[
-              { text: 'Github repo', url: 'https://github.com/iqnivek/save_tabbed_images' },
-              { text: 'Download in chrome web store', url: 'https://chrome.google.com/webstore/detail/save-tabbed-images/hhcoikfhkkadkgklepjkfgafmjoggefh' },
+              { text: 'Github repo', url: 'https://github.com/iqnivek/save_tabbed_images', icon: 'fa-github' },
+              { text: 'Download in chrome web store', url: 'https://chrome.google.com/webstore/detail/save-tabbed-images/hhcoikfhkkadkgklepjkfgafmjoggefh', icon: 'fa-chrome' },
             ]}
           >
             Open source chrome extension for downloading images in tabs super quick. Built with React and Webpack.
