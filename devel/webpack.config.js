@@ -1,8 +1,8 @@
 module.exports = {
   context: __dirname,
-  entry: './src/index.jsx',
+  entry: '../src/index.jsx',
   output: {
-    path: './build',
+    path: './',
     filename: 'index.js',
   },
   resolve: {

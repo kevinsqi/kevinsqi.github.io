@@ -7,7 +7,7 @@
     "clean": "rimraf build",
     "lint": "eslint src test",
     "prestart": "npm install",
-    "start": "webpack-dev-server --progress"
+    "start": "cd devel && webpack-dev-server --progress"
   },
   "dependencies": {
     "moment": "^2.12.0",
