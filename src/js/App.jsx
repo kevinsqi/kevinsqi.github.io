@@ -65,16 +65,6 @@ class App extends React.Component {
             </Project>
 
             <Project
-              name="EventMapper"
-              image="assets/eventmapper.png"
-              links={[
-                { text: 'View site', url: 'http://eventmapper.net' }
-              ]}
-            >
-              A site that puts concerts on a map, ranked by popularity. Built with Rails and the Songkick API.
-            </Project>
-
-            <Project
               name="Save Tabbed Images"
               image="assets/save_tabbed_images.png"
               links={[
@@ -83,6 +73,16 @@ class App extends React.Component {
               ]}
             >
               Open source chrome extension for downloading images in tabs super quick. Built with React.
+            </Project>
+
+            <Project
+              name="EventMapper"
+              image="assets/eventmapper.png"
+              links={[
+                { text: 'View site', url: 'http://eventmapper.net' }
+              ]}
+            >
+              A site that puts concerts on a map, ranked by popularity. Built with Rails and the Songkick API.
             </Project>
           </section>
         </div>
