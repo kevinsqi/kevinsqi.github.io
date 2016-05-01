@@ -18,7 +18,7 @@ const Project = ({ name, image, url, links, children }) => {
         {children}
 
         <ul className="list-unstyled m-t-1">
-          {links.map(({ text, url, icon }) => <li><i className={`text-muted fa ${icon || 'fa-external-link'}`} style={{ width: '1em', marginRight: '0.3em' }}></i> <a href={url}>{text}</a></li>)}
+          {links.map(({ text, url, icon }) => <li key={url}><i className={`text-muted fa ${icon || 'fa-external-link'}`} style={{ width: '1em', marginRight: '0.3em' }}></i> <a href={url}>{text}</a></li>)}
         </ul>
       </div>
     </div>
@@ -52,6 +52,16 @@ class App extends React.Component {
               ]}
             >
               An open source calendar heatmap component inspired by github's contribution graph, available on NPM. Built with React and SVG.
+            </Project>
+
+            <Project
+              name="patientslikeme.com/embed"
+              image="assets/patientslikeme_embed.png"
+              links={[
+                { text: 'View site', url: 'https://www.patientslikeme.com/embed' }
+              ]}
+            >
+              An embeddable widget for PatientsLikeMe, which shows a quick glimpse of top treatments and side effects for a condition.
             </Project>
 
             <Project
