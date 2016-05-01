@@ -31,7 +31,7 @@ class App extends React.Component {
       <div>
         <nav className="navbar navbar-dark m-b-2">
           <div className="container">
-            <a className="navbar-brand" href="/">Kevin Qi</a>
+            <a className="navbar-brand stylized" href="/">Kevin Qi</a>
             <div className="nav navbar-nav pull-sm-right">
               <a className="nav-item nav-link" href="http://iqnivek.github.io/blog/">Blog</a>
               <a className="nav-item nav-link" href="https://github.com/iqnivek">Github</a>
@@ -41,7 +41,7 @@ class App extends React.Component {
         </nav>
 
         <div className="container">
-          <h2 className="m-b-2 text-sm-center text-muted">Projects</h2>
+          <h2 className="m-b-2 stylized text-xs-center text-muted">&mdash; Projects &mdash;</h2>
           <section>
             <Project
               name="react-calendar-heatmap"
