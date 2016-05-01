@@ -41,7 +41,7 @@ class App extends React.Component {
         </nav>
 
         <div className="container">
-          <h2 className="m-b-1">Projects</h2>
+          <h2 className="m-b-2 text-sm-center text-muted">Projects</h2>
           <section>
             <Project
               name="react-calendar-heatmap"
@@ -61,7 +61,7 @@ class App extends React.Component {
                 { text: 'View site', url: 'https://www.patientslikeme.com/embed' }
               ]}
             >
-              An embeddable widget for PatientsLikeMe, which shows a quick glimpse of top treatments and side effects for a condition.
+              An embeddable widget for PatientsLikeMe, which shows a quick glimpse of top treatments and side effects for a condition. Built with React.
             </Project>
 
             <Project
@@ -82,7 +82,7 @@ class App extends React.Component {
                 { text: 'Download in chrome web store', url: 'https://chrome.google.com/webstore/detail/save-tabbed-images/hhcoikfhkkadkgklepjkfgafmjoggefh', icon: 'fa-chrome' },
               ]}
             >
-              Open source chrome extension for downloading images in tabs super quick. Built with React and Webpack.
+              Open source chrome extension for downloading images in tabs super quick. Built with React.
             </Project>
           </section>
         </div>

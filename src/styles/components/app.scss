@@ -1,6 +1,27 @@
+h1, h2, h3, h4, h5, h6, .navbar {
+  font-family: 'Raleway', arial, sans-serif;
+}
+
 .navbar {
   border-radius: 0;
   background: #3e98c7;
+}
+
+.navbar-brand {
+  font-size: 1.4em;
+  font-weight: 200;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.6em;
 }
 
 a {
