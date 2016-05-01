@@ -84,6 +84,16 @@ class App extends React.Component {
             >
               A site that puts concerts on a map, ranked by popularity. Built with Rails and the Songkick API.
             </Project>
+
+            <Project
+              name="PLM Connect - Treatments"
+              image="assets/patientslikeme_connect_treatments.png"
+              links={[
+                { text: 'View in app store', url: 'https://itunes.apple.com/us/app/connect-patientslikeme-control/id955272281', icon: 'fa-apple' }
+              ]}
+            >
+              I added treatment reports to the PatientsLikeMe iOS app. The reports have info on cost, effectiveness, side effects, and patient evaluations.
+            </Project>
           </section>
         </div>
       </div>
