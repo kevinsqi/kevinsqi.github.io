@@ -29,7 +29,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-light bg-faded m-b-2">
+        <nav className="navbar navbar-dark m-b-2">
           <div className="container">
             <a className="navbar-brand" href="/">Kevin Qi</a>
             <div className="nav navbar-nav pull-sm-right">

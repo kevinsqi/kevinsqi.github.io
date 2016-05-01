@@ -1,1 +1,12 @@
+.navbar {
+  border-radius: 0;
+  background: #3e98c7;
+}
 
+a {
+  color: #3e98c7;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
