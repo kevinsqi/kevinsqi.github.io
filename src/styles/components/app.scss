@@ -1,3 +1,7 @@
+//
+// Bootstrap overrides
+//
+
 h1, h2, h3, h4, h5, h6, .navbar {
   font-family: 'Raleway', arial, sans-serif;
 }
@@ -8,13 +12,6 @@ h1, h2, h3, h4, h5, h6, .navbar {
   background: url(/assets/background.jpg);
   background-size: cover;
   padding: 60px 0;
-}
-
-.stylized {
-  font-weight: 200;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: 2px;
 }
 
 .navbar-brand {
@@ -51,4 +48,15 @@ a {
 
 .img-rounded {
   border: 1px solid #dde;
+}
+
+//
+// Custom
+//
+
+.stylized {
+  font-weight: 200;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
