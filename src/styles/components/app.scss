@@ -7,7 +7,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
   background: #3e98c7;
   background: url(/assets/background.jpg);
   background-size: cover;
-  padding: 40px 0;
+  padding: 60px 0;
 }
 
 .stylized {
@@ -19,6 +19,18 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .navbar-brand {
   font-size: 1.4em;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-size: 1.1em;
+  color: rgba(#fff, 0.75);
+  &:hover {
+    color: rgba(#fff, 1);
+  }
+}
+
+.navbar-nav .nav-item + .nav-item {
+  margin-left: 2rem;
 }
 
 h2 {
