@@ -92,7 +92,7 @@ class App extends React.Component {
                 { text: 'View in app store', url: 'https://itunes.apple.com/us/app/connect-patientslikeme-control/id955272281', icon: 'fa-apple' }
               ]}
             >
-              I added treatment reports to the PatientsLikeMe iOS app. The reports have info on cost, effectiveness, side effects, and patient evaluations.
+              I added treatment reports to the native PatientsLikeMe iOS app. The reports have info on cost, effectiveness, side effects, and patient evaluations.
             </Project>
           </section>
         </div>
