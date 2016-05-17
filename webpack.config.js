@@ -1,4 +1,7 @@
-module.exports = {
+var webpack = require('webpack');
+var env = process.env.NODE_ENV;
+
+var config = {
   context: __dirname,
   entry: './src/index.jsx',
   output: {
@@ -31,5 +34,18 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(env)
+    })
+  ]
 };
+
+if (env === 'production') {
+  config.plugins.push(
+    new webpack.optimize.UglifyJsPlugin()
+  );
+}
+
+module.exports = config;
