@@ -31,7 +31,9 @@ class App extends React.Component {
       <div>
         <nav className="navbar navbar-dark m-b-2">
           <div className="container">
-            <a className="navbar-brand stylized" href="/">Kevin Qi</a>
+            <a className="navbar-brand stylized" href="/">
+              Kevin Qi
+            </a>
             <div className="nav navbar-nav pull-sm-right stylized">
               <a className="nav-item nav-link" href="http://iqnivek.github.io/blog/">Blog</a>
               <a className="nav-item nav-link" href="https://github.com/iqnivek">Github</a>
@@ -41,7 +43,10 @@ class App extends React.Component {
         </nav>
 
         <div className="container">
-          <h2 className="m-b-2 stylized text-xs-center text-muted">&mdash; Projects &mdash;</h2>
+          <p className="m-b-2 text-muted">
+            Hello! I'm a developer that likes to think a lot about product and design. I've done a lot of work in Rails and React, and some work with native iOS apps. Here are some projects I've worked on:
+          </p>
+          <hr className="m-b-2" />
           <section>
             <Project
               name="react-calendar-heatmap"
@@ -72,7 +77,7 @@ class App extends React.Component {
                 { text: 'Download in chrome web store', url: 'https://chrome.google.com/webstore/detail/save-tabbed-images/hhcoikfhkkadkgklepjkfgafmjoggefh', icon: 'fa-chrome' },
               ]}
             >
-              Open source chrome extension for downloading images in tabs super quick. Built with React.
+              An open source chrome extension for downloading images in tabs super quick. Personal project built with React.
             </Project>
 
             <Project
@@ -82,17 +87,17 @@ class App extends React.Component {
                 { text: 'View site', url: 'http://eventmapper.net' }
               ]}
             >
-              A site that puts concerts on a map, ranked by popularity. Built with Rails and the Songkick API.
+              A site that puts concerts on a map, ordered by popularity. Personal project built with Rails and the Songkick API.
             </Project>
 
             <Project
-              name="PLM Connect - Treatments"
+              name="PatientsLikeMe App Treatment Reports"
               image="assets/patientslikeme_connect_treatments.png"
               links={[
                 { text: 'View in app store', url: 'https://itunes.apple.com/us/app/connect-patientslikeme-control/id955272281', icon: 'fa-apple' }
               ]}
             >
-              I added treatment reports to the native PatientsLikeMe iOS app. The reports have info on cost, effectiveness, side effects, and patient evaluations.
+              I worked on adding treatment reports to the native PatientsLikeMe iOS app. The reports have useful info on cost, effectiveness, side effects, and patient evaluations. Built with Swift.
             </Project>
           </section>
         </div>
