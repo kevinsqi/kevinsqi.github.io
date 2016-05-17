@@ -44,7 +44,7 @@ class App extends React.Component {
 
         <div className="container">
           <p className="m-b-2 text-muted">
-            Hello! I'm a developer that likes to think a lot about product and design. I've done a lot of work in Rails and React, and some work with native iOS apps. Here are some projects I've worked on:
+            Hello! I'm a developer that likes to think deeply about product and design. I've done a lot of work in Rails and React, and some work with native iOS apps. Here are some projects I've worked on:
           </p>
           <hr className="m-b-2" />
           <section>
