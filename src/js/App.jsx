@@ -6,14 +6,14 @@ const Project = ({ name, image, url, links, children }) => {
   const primaryUrl = links[0].url;
   return (
     <div className="row m-b-1">
-      <div className="col-sm-6">
+      <div className="col-xs-12 col-sm-6">
         <div className="text-xs-center">
           <a href={primaryUrl}>
             <img className="img-fluid img-rounded m-b-1" src={image} />
           </a>
         </div>
       </div>
-      <div className="col-sm-6">
+      <div className="col-xs-12 col-sm-6">
         <h3><a href={primaryUrl}>{name}</a></h3>
         {children}
 
