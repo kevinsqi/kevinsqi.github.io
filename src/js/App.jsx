@@ -1,47 +1,14 @@
 import '../styles/components/app';
 
 import React from 'react';
-
-const Project = ({ name, image, url, links, children }) => {
-  const primaryUrl = links[0].url;
-  return (
-    <div className="row m-b-1">
-      <div className="col-xs-12 col-sm-6">
-        <div className="text-xs-center">
-          <a href={primaryUrl}>
-            <img className="img-fluid img-rounded m-b-1" src={image} />
-          </a>
-        </div>
-      </div>
-      <div className="col-xs-12 col-sm-6">
-        <h3><a href={primaryUrl}>{name}</a></h3>
-        {children}
-
-        <ul className="list-unstyled m-t-1">
-          {links.map(({ text, url, icon }) => <li key={url}><i className={`text-muted fa ${icon || 'fa-external-link'}`} style={{ width: '1em', marginRight: '0.3em' }}></i> <a href={url}>{text}</a></li>)}
-        </ul>
-      </div>
-    </div>
-  );
-};
+import Nav from './Nav';
+import Project from './Project';
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-dark m-b-2">
-          <div className="container">
-            <a className="navbar-brand stylized" href="/">
-              Kevin Qi
-            </a>
-            <div className="nav navbar-nav pull-sm-right stylized">
-              <a className="nav-item nav-link" href="http://iqnivek.github.io/blog/">Blog</a>
-              <a className="nav-item nav-link" href="https://github.com/iqnivek">Github</a>
-              <a className="nav-item nav-link" href="assets/kevin_qi_resume.pdf">Resume</a>
-            </div>
-          </div>
-        </nav>
-
+        <Nav />
         <div className="container">
           <p className="m-b-2 text-muted">
             Hello! I'm a developer that likes to think deeply about product and design. I've done a lot of work in Rails and React, and some work with native iOS apps. Here are some projects I've worked on:
