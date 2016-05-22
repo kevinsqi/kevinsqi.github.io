@@ -8,6 +8,11 @@ h1, h2, h3, h4, h5, h6, .navbar {
   font-family: Open Sans, arial, sans-serif;
 }
 
+h2 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
 .navbar {
   border-radius: 0;
   background: #3e98c7;
@@ -35,10 +40,6 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .navbar-nav .nav-link {
   line-height: $brandFontSize;
-}
-
-h2 {
-  font-size: 1.1em;
 }
 
 h3 {
