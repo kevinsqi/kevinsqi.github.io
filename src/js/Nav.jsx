@@ -7,7 +7,7 @@ const Nav = () => (
       <Link to="/" className="navbar-brand">Kevin Qi</Link>
 
       <div className="nav navbar-nav pull-sm-right">
-        <Link to="/about" className="nav-item nav-link">About</Link>
+        <Link to="/about" className="nav-item nav-link" activeClassName="active">About</Link>
         <a className="nav-item nav-link" href="http://iqnivek.github.io/blog/">Blog</a>
         <a className="nav-item nav-link" href="assets/kevin_qi_resume.pdf">Resume</a>
       </div>
