@@ -4,9 +4,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, hashHistory } from 'react-router';
 
+import About from './js/About';
 import App from './js/App';
-
-const About = () => <div>hi yo</div>;
 
 ReactDOM.render((
   <Router history={hashHistory}>
