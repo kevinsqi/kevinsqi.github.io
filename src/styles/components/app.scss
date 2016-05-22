@@ -2,8 +2,10 @@
 // Bootstrap overrides
 //
 
+$brandFontSize: 1.6em;
+
 h1, h2, h3, h4, h5, h6, .navbar {
-  font-family: 'Raleway', arial, sans-serif;
+  font-family: Open Sans, arial, sans-serif;
 }
 
 .navbar {
@@ -15,7 +17,8 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .navbar-brand {
-  font-size: 1.4em;
+  font-size: $brandFontSize;
+  line-height: 1;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -28,6 +31,10 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .navbar-nav .nav-item + .nav-item {
   margin-left: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  line-height: $brandFontSize;
 }
 
 h2 {
@@ -54,9 +61,4 @@ a {
 // Custom
 //
 
-.stylized {
-  font-weight: 200;
-  font-style: italic;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
+
