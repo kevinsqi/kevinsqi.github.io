@@ -8,8 +8,8 @@ const Nav = () => (
 
       <div className="nav navbar-nav pull-sm-right">
         <Link to="/about" className="nav-item nav-link" activeClassName="active">About</Link>
+        <Link to="/resume" className="nav-item nav-link" activeClassName="active">Resume</Link>
         <a className="nav-item nav-link" href="http://iqnivek.github.io/blog/">Blog</a>
-        <a className="nav-item nav-link" href="assets/kevin_qi_resume.pdf">Resume</a>
       </div>
     </div>
   </nav>
