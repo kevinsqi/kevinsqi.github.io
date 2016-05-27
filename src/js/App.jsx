@@ -3,6 +3,7 @@ import '../styles/components/app';
 import React from 'react';
 import Page from './Page';
 import Project from './Project';
+import { URLS } from './constants';
 
 class App extends React.Component {
   render() {
@@ -60,7 +61,7 @@ class App extends React.Component {
             name="PatientsLikeMe App Treatment Reports"
             image="assets/patientslikeme_connect_treatments.png"
             links={[
-              { text: 'View in app store', url: 'https://itunes.apple.com/us/app/connect-patientslikeme-control/id955272281', icon: 'fa-apple' }
+              { text: 'View in app store', url: URLS.PLM_IOS_APP, icon: 'fa-apple' }
             ]}
           >
             I worked on adding treatment reports to the native PatientsLikeMe iOS app. The reports have useful info on cost, effectiveness, side effects, and patient evaluations. Built with Swift.

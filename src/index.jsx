@@ -7,6 +7,7 @@ import { createHashHistory } from 'history';
 
 import About from './js/About';
 import App from './js/App';
+import Resume from './js/Resume';
 
 // remove ?_k= param from hashHistory
 const appHistory = useRouterHistory(createHashHistory)({ queryKey: false });
@@ -15,5 +16,6 @@ ReactDOM.render((
   <Router history={appHistory}>
     <Route path="/" component={App} />
     <Route path="/about" component={About} />
+    <Route path="/resume" component={Resume} />
   </Router>
 ), document.getElementById('app'));
