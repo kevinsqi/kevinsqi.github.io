@@ -78,11 +78,11 @@ const Resume = () => (
         </Job>
 
         <h2 className="m-t-3 m-b-2">Projects</h2>
-        <h3>EventMapper</h3>
+        <h3><a href={URLS.EVENTMAPPER_SITE}>EventMapper</a></h3>
         <p>Maps out popular concerts in your city.</p>
 
-        <h3>Save Tabbed Images</h3>
-        <p>Chrome extension for downloading images in tabs super quick.</p>
+        <h3><a href={URLS.SAVE_TABBED_IMAGES_GITHUB}>Save Tabbed Images</a></h3>
+        <p>Chrome extension for downloading images in tabs super quick, with 4,000+ users.</p>
 
         <h2 className="m-t-3 m-b-2">Education</h2>
         <h3>Carnegie Mellon University</h3>

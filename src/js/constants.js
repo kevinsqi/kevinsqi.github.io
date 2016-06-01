@@ -1,3 +1,5 @@
 export const URLS = {
-  PLM_IOS_APP: 'https://itunes.apple.com/us/app/connect-patientslikeme-control/id955272281'
+  EVENTMAPPER_SITE: 'http://eventmapper.net',
+  PLM_IOS_APP: 'https://itunes.apple.com/us/app/connect-patientslikeme-control/id955272281',
+  SAVE_TABBED_IMAGES_GITHUB: 'https://github.com/iqnivek/save_tabbed_images',
 };

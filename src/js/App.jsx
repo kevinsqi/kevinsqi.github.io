@@ -40,18 +40,18 @@ class App extends React.Component {
             name="Save Tabbed Images"
             image="assets/save_tabbed_images.png"
             links={[
-              { text: 'Github repo', url: 'https://github.com/iqnivek/save_tabbed_images', icon: 'fa-github' },
+              { text: 'Github repo', url: URLS.SAVE_TABBED_IMAGES_GITHUB, icon: 'fa-github' },
               { text: 'Download in chrome web store', url: 'https://chrome.google.com/webstore/detail/save-tabbed-images/hhcoikfhkkadkgklepjkfgafmjoggefh', icon: 'fa-chrome' },
             ]}
           >
-            An open source chrome extension for downloading images in tabs super quick. Personal project built with React.
+            An open source chrome extension for downloading images in tabs super quick, with 4,000+ users. Personal project built with React.
           </Project>
 
           <Project
             name="EventMapper"
             image="assets/eventmapper.png"
             links={[
-              { text: 'View site', url: 'http://eventmapper.net' }
+              { text: 'View site', url: URLS.EVENTMAPPER_SITE }
             ]}
           >
             A site that puts concerts on a map, ordered by popularity. Personal project built with Rails and the Songkick API.
