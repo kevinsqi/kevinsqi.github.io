@@ -3,9 +3,10 @@
 //
 
 $brandFontSize: 1.6em;
+$stylizedFontFamily: Open Sans, arial, sans-serif;
 
 h1, h2, h3, h4, h5, h6, .navbar {
-  font-family: Open Sans, arial, sans-serif;
+  font-family: $stylizedFontFamily;
 }
 
 h2 {
@@ -17,15 +18,13 @@ h2 {
 
 .navbar {
   border-radius: 0;
-  background: #3e98c7;
-  background: url(/assets/background.jpg);
-  background-size: cover;
   padding: 40px 0;
 }
 
-.navbar-brand {
+.navbar-dark .navbar-brand {
   font-size: $brandFontSize;
   line-height: 1;
+  color: #ccc;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -64,4 +63,14 @@ a {
 // Custom
 //
 
+.intro {
+  background: #3e98c7;
+  background: url(/assets/background.jpg);
+  background-size: cover;
+  color: #fff;
+  font-family: $stylizedFontFamily;
 
+  .lead {
+    font-size: 2em;
+  }
+}

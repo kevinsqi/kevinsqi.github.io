@@ -3,7 +3,9 @@ import Nav from './Nav';
 
 const Page = ({ children }) => (
   <div>
-    <Nav />
+    <div className="intro">
+      <Nav />
+    </div>
 
     <div className="container">
       {children}
