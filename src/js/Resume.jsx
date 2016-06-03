@@ -48,7 +48,7 @@ const Resume = () => (
           endDate="Nov 2014"
         >
           <ul>
-            <li>Worked with clients to design and build new websites. Examples: <a href="http://www.neurosaveinc.com/">NeuroSave</a>, <a href="http://bulent.kevinqi.com/">Bulent Guneralp</a></li>
+            <li>Designed and built new websites for clients like <a href="http://www.neurosaveinc.com/">NeuroSave</a> and <a href="http://bulent.kevinqi.com/">Bulent Guneralp</a>.</li>
           </ul>
         </Job>
 
@@ -61,7 +61,7 @@ const Resume = () => (
           <ul>
             <li>Built a shipment search interface with sophisticated refinements and filtering, and an interface to visualize Chinese trade data</li>
             <li>Helped introduce performance monitoring via NewRelic, acceptance testing, easier A/B testing, and established a code review process.</li>
-            <li>Numerous projects on homepage, search, profile pages, subscription flows, and user dashboard. Improved conversion rates of top landing pages.</li>
+            <li>Numerous projects on homepage, search, subscription flows, and user dashboard. Improved conversion rate of high-traffic public company profiles.</li>
           </ul>
         </Job>
 
@@ -82,7 +82,7 @@ const Resume = () => (
         <p>Maps out popular concerts in your city.</p>
 
         <h3><a href={URLS.SAVE_TABBED_IMAGES_GITHUB}>Save Tabbed Images</a></h3>
-        <p>Chrome extension for downloading images in tabs super quick, with 4,000+ users.</p>
+        <p>Chrome extension for downloading images in tabs super quick, with 4,000+ weekly users.</p>
 
         <h2 className="m-t-3 m-b-2">Education</h2>
         <h3>Carnegie Mellon University</h3>

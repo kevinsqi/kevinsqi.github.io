@@ -54,7 +54,7 @@ class App extends React.Component {
                 { text: 'Download in chrome web store', url: 'https://chrome.google.com/webstore/detail/save-tabbed-images/hhcoikfhkkadkgklepjkfgafmjoggefh', icon: 'fa-chrome' },
               ]}
             >
-              An open source chrome extension for downloading images in tabs super quick, with 4,000+ users. Personal project built with React.
+              An open source chrome extension for downloading images in tabs super quick, with 4,000+ weekly users. Personal project built with React.
             </Project>
 
             <Project
