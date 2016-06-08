@@ -77,3 +77,13 @@ a {
     font-size: 2em;
   }
 }
+
+//
+// Print (for resume)
+//
+
+@media print {
+  * {
+    font-size: 12px;
+  }
+}
