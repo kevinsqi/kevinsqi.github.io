@@ -4,9 +4,9 @@ import { URLS } from './constants';
 
 const Info = ({ email, github, website }) => (
   <ul className="list-unstyled">
-    <li><a href={`mailto:${email}`}>{email}</a></li>
-    <li>Site: <a href={website}>{website}</a></li>
-    <li>Github: <a href={`https://github.com/${github}`}>{github}</a></li>
+    <li>Email: <a href={`mailto:${email}`}>{email}</a></li>
+    <li>Website: <a href={website}>{website}</a></li>
+    <li>Github: <a href={`https://github.com/${github}`}>@{github}</a></li>
   </ul>
 );
 
@@ -22,7 +22,7 @@ const Job = ({ name, position, startDate, endDate, children }) => (
 const Resume = () => (
   <Page>
     <div className="row">
-      <div className="col-xs-12">
+      <div className="col-xs-12 m-b-2">
         <h1>Kevin Qi</h1>
       </div>
 
@@ -90,6 +90,7 @@ const Resume = () => (
       </div>
 
       <div className="col-xs-12 col-sm-4">
+        <h2 className="m-b-2">Contact</h2>
         <Info
           email="iqnivek@gmail.com"
           github="iqnivek"

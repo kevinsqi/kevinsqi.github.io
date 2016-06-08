@@ -10,10 +10,13 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 h2 {
-  font-size: 1.6em;
+  color: #888;
+  font-size: 1em;
   font-weight: bold;
   padding-bottom: 0.4em;
   border-bottom: 1px solid #ddd;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .navbar {
