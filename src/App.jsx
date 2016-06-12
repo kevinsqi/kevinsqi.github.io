@@ -14,7 +14,7 @@ class App extends React.Component {
             <div className="row">
               <div className="col-xs-12 col-sm-8">
                 <p className="m-b-3 lead">
-                  Web developer versed in frontend and design. Based in Boston, MA.
+                  Software engineer versed in frontend web and design. Based in Boston, MA.
                 </p>
               </div>
             </div>
