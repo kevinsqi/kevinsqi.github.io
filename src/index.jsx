@@ -5,9 +5,9 @@ import ReactDOM from 'react-dom';
 import { Router, Route, useRouterHistory } from 'react-router';
 import { createHashHistory } from 'history';
 
-import About from './js/About';
-import App from './js/App';
-import Resume from './js/Resume';
+import About from './About';
+import App from './App';
+import Resume from './Resume';
 
 // remove ?_k= param from hashHistory
 const appHistory = useRouterHistory(createHashHistory)({ queryKey: false });
