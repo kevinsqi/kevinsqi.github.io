@@ -27,11 +27,11 @@ class App extends React.Component {
               name="react-calendar-heatmap"
               image="assets/react_calendar_heatmap.png"
               links={[
-                { text: 'Github repo', url: 'https://github.com/patientslikeme/react-calendar-heatmap', icon: 'fa-github' },
+                { text: 'Github repo', url: URLS.REACT_CALENDAR_HEATMAP_GITHUB, icon: 'fa-github' },
                 { text: 'Demo page', url: 'http://patientslikeme.github.io/react-calendar-heatmap/' },
               ]}
             >
-              An open source calendar heatmap component inspired by github's contribution graph, available on NPM. Built with React and SVG.
+              {PROJECTS.REACT_CALENDAR_HEATMAP}
             </Project>
 
             <Project
