@@ -79,14 +79,26 @@ const Resume = () => (
 
         <h2 className="mt-3 mb-2">Projects</h2>
 
-        <h3><a href={URLS.EVENTMAPPER_SITE}>EventMapper</a></h3>
-        <p>{PROJECTS.EVENTMAPPER}</p>
+        <h3>EventMapper</h3>
+        <p>
+          <a className="text-muted" href={URLS.EVENTMAPPER_SITE}>{URLS.EVENTMAPPER_SITE}</a>
+          <br />
+          {PROJECTS.EVENTMAPPER}
+        </p>
 
-        <h3><a href={URLS.REACT_CALENDAR_HEATMAP_GITHUB}>react-calendar-heatmap</a></h3>
-        <p>{PROJECTS.REACT_CALENDAR_HEATMAP}</p>
+        <h3>react-calendar-heatmap</h3>
+        <p>
+          <a className="text-muted" href={URLS.REACT_CALENDAR_HEATMAP_GITHUB}>{URLS.REACT_CALENDAR_HEATMAP_GITHUB}</a>
+          <br />
+          {PROJECTS.REACT_CALENDAR_HEATMAP}
+        </p>
 
-        <h3><a href={URLS.SAVE_TABBED_IMAGES_GITHUB}>Save Tabbed Images</a></h3>
-        <p>{PROJECTS.SAVE_TABBED_IMAGES}</p>
+        <h3>Save Tabbed Images</h3>
+        <p>
+          <a className="text-muted" href={URLS.SAVE_TABBED_IMAGES_GITHUB}>{URLS.SAVE_TABBED_IMAGES_GITHUB}</a>
+          <br />
+          {PROJECTS.SAVE_TABBED_IMAGES}
+        </p>
 
         <h2 className="mt-3 mb-2">Education</h2>
         <h3>Carnegie Mellon University</h3>
