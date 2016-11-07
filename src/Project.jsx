@@ -7,7 +7,7 @@ const Project = ({ name, image, url, links, children }) => {
       <div className="col-xs-12 col-sm-6">
         <div className="text-xs-center">
           <a href={primaryUrl}>
-            <img className="img-fluid img-rounded mb-1" src={image} />
+            <img className="img-fluid rounded mb-1" src={image} />
           </a>
         </div>
       </div>

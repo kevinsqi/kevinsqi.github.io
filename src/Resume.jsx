@@ -39,7 +39,7 @@ const Resume = () => (
             <li>Built React frontend for general-purpose patient interview framework, and wrote dozens of other React components.</li>
             <li>Helped introduce technologies and best practices, including React/ES6/webpack and javascript testing. Gave presentations on GraphQL, ES6 best practices, and React.</li>
             <li>Open-sourced two react components, <a href={URLS.REACT_CALENDAR_HEATMAP_GITHUB}>react-calendar-heatmap</a> and <a href="https://github.com/iqnivek/react-circular-progressbar">react-circular-progressbar</a>.</li>
-            <li>Sole developer on <a href={URLS.PLM_IOS_APP}>PLM Connect iOS app</a> for a few months, adding treatment reports and other features to the app.</li>
+            <li>Quickly learned and handled development on <a href={URLS.PLM_IOS_APP}>PLM Connect iOS app</a> for two months, adding treatment reports and other features to the app.</li>
           </ul>
         </Job>
 
@@ -62,7 +62,7 @@ const Resume = () => (
           <ul>
             <li>Built a shipment search interface with sophisticated refinements and filtering, and an interface to visualize Chinese trade data</li>
             <li>Helped introduce performance monitoring via NewRelic, acceptance testing, easier A/B testing, and established a code review process.</li>
-            <li>Numerous projects on homepage, search, subscription flows, and user dashboard. Improved conversion rate of high-traffic public company profiles.</li>
+            <li>Worked on numerous projects on homepage, search, subscription flows, and user dashboard. Improved conversion rate of high-traffic public company profiles.</li>
           </ul>
         </Job>
 
