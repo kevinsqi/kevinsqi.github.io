@@ -1,6 +1,6 @@
 import React from 'react';
 import Page from './Page';
-import { URLS } from './constants';
+import { SAVE_TABBED_IMAGES_WEEKLY_USERS, URLS } from './constants';
 
 const Info = ({ email, github, website }) => (
   <ul className="list-unstyled">
@@ -82,7 +82,7 @@ const Resume = () => (
         <p>Maps out popular concerts in your city.</p>
 
         <h3><a href={URLS.SAVE_TABBED_IMAGES_GITHUB}>Save Tabbed Images</a></h3>
-        <p>Chrome extension for downloading images in tabs super quick, with 4,000+ weekly users.</p>
+        <p>Chrome extension for downloading images in tabs super quick, with {SAVE_TABBED_IMAGES_WEEKLY_USERS} weekly users.</p>
 
         <h2 className="mt-3 mb-2">Education</h2>
         <h3>Carnegie Mellon University</h3>
