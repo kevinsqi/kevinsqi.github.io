@@ -79,13 +79,6 @@ const Resume = () => (
 
         <h2 className="mt-3 mb-2">Projects</h2>
 
-        <h3>EventMapper</h3>
-        <p>
-          <a className="text-muted" href={URLS.EVENTMAPPER_SITE}>{URLS.EVENTMAPPER_SITE}</a>
-          <br />
-          {PROJECTS.EVENTMAPPER}
-        </p>
-
         <h3>react-calendar-heatmap</h3>
         <p>
           <a className="text-muted" href={URLS.REACT_CALENDAR_HEATMAP_GITHUB}>{URLS.REACT_CALENDAR_HEATMAP_GITHUB}</a>
@@ -98,6 +91,13 @@ const Resume = () => (
           <a className="text-muted" href={URLS.SAVE_TABBED_IMAGES_GITHUB}>{URLS.SAVE_TABBED_IMAGES_GITHUB}</a>
           <br />
           {PROJECTS.SAVE_TABBED_IMAGES}
+        </p>
+
+        <h3>EventMapper</h3>
+        <p>
+          <a className="text-muted" href={URLS.EVENTMAPPER_SITE}>{URLS.EVENTMAPPER_SITE}</a>
+          <br />
+          {PROJECTS.EVENTMAPPER}
         </p>
 
         <h2 className="mt-3 mb-2">Education</h2>
