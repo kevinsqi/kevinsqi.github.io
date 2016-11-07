@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from './Nav';
 import Project from './Project';
-import { SAVE_TABBED_IMAGES_WEEKLY_USERS, URLS } from './constants';
+import { PROJECTS, URLS } from './constants';
 
 class App extends React.Component {
   render() {
@@ -52,7 +52,7 @@ class App extends React.Component {
                 { text: 'Download in chrome web store', url: 'https://chrome.google.com/webstore/detail/save-tabbed-images/hhcoikfhkkadkgklepjkfgafmjoggefh', icon: 'fa-chrome' },
               ]}
             >
-              An open source chrome extension for downloading images in tabs super quick, with {SAVE_TABBED_IMAGES_WEEKLY_USERS} weekly users. Personal project built with React.
+              {PROJECTS.SAVE_TABBED_IMAGES}
             </Project>
 
             <Project
@@ -62,7 +62,7 @@ class App extends React.Component {
                 { text: 'View site', url: URLS.EVENTMAPPER_SITE }
               ]}
             >
-              A site that puts concerts on a map, ordered by popularity. Personal project built with Rails and the Songkick API.
+              {PROJECTS.EVENTMAPPER}
             </Project>
 
             <Project
