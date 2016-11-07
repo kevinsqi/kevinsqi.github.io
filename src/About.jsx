@@ -8,10 +8,9 @@ const About = () => (
         <div className="text-xs-center">
           <h1>About</h1>
           <img
-            className="img-circle"
             src="http://www.gravatar.com/avatar/8192416018e38bce99ad92b85f918ef1?s=200"
             alt="Kevin Qi"
-            style={{ width: 150 }}
+            style={{ width: 150, borderRadius: 150 }}
           />
         </div>
 
