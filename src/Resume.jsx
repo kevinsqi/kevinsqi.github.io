@@ -33,12 +33,13 @@ const Resume = () => (
           name="PatientsLikeMe"
           position="Senior software engineer"
           startDate="Dec 2014"
-          endDate="present"
+          endDate="Aug 2016"
         >
           <ul>
             <li>Built React frontend for general-purpose patient interview framework, and wrote dozens of other React components.</li>
-            <li>Helped introduce React/ES6/webpack infrastructure, and javascript testing.</li>
-            <li>Added treatment reports and other features to the <a href={URLS.PLM_IOS_APP}>PLM Connect iOS app</a></li>
+            <li>Helped introduce technologies and best practices, including React/ES6/webpack and javascript testing. Gave presentations on GraphQL, ES6 best practices, and React.</li>
+            <li>Open-sourced two react components, <a href={URLS.REACT_CALENDAR_HEATMAP_GITHUB}>react-calendar-heatmap</a> and <a href="https://github.com/iqnivek/react-circular-progressbar">react-circular-progressbar</a>.</li>
+            <li>Sole developer on <a href={URLS.PLM_IOS_APP}>PLM Connect iOS app</a> for a few months, adding treatment reports and other features to the app.</li>
           </ul>
         </Job>
 
