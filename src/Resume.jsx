@@ -74,7 +74,6 @@ const Resume = () => (
         >
           <ul>
             <li>Developed major frontend improvements to an emergency preparedness training application built on Ruby on Rails.</li>
-            <li>Built a prototype Rails application that allowed playback of weather patterns over time based on public satellite data.</li>
           </ul>
         </Job>
 
