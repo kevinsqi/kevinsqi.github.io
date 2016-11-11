@@ -27,8 +27,12 @@ const Resume = () => (
       </div>
 
       <div className="col-xs-12 col-sm-8">
+        <h2 className="mb-1">Summary</h2>
+        <p>Hi! I'm a full-stack web developer with an affinity for frontend development and design. I have 6 years of experience working at web startups, and have helped introduce tech and engineering practices such as React, ES6, integration testing, and code review.</p>
+        <p>I always aim to write readable, well-documented and tested code - while still iterating quickly. I like to have ownership of a product and take a holistic view beyond coding, thinking about things like A/B testing, analytics, and design.</p>
+        <p>I'd love to work at a startup or small company where I can help build interesting, impactful products.</p>
 
-        <h2 className="mb-2">Experience</h2>
+        <h2 className="mt-3 mb-1">Experience</h2>
         <Job
           name="PatientsLikeMe"
           position="Senior software engineer"
@@ -77,7 +81,7 @@ const Resume = () => (
           </ul>
         </Job>
 
-        <h2 className="mt-3 mb-2">Projects</h2>
+        <h2 className="mt-3 mb-1">Projects</h2>
 
         <h3>react-calendar-heatmap</h3>
         <p>
@@ -100,20 +104,20 @@ const Resume = () => (
           {PROJECTS.EVENTMAPPER}
         </p>
 
-        <h2 className="mt-3 mb-2">Education</h2>
+        <h2 className="mt-3 mb-1">Education</h2>
         <h3>Carnegie Mellon University</h3>
-        <p>BS in Computer Science, 3.86/4.0 GPA, 2006-2009</p>
+        <p>B.S. in Computer Science, 3.86/4.0 GPA, 2006-2009</p>
       </div>
 
       <div className="col-xs-12 col-sm-4">
-        <h2 className="mb-2">Contact</h2>
+        <h2 className="mb-1">Contact</h2>
         <Info
           email="iqnivek@gmail.com"
           github="iqnivek"
           website="http://kevinqi.com"
         />
 
-        <h2 className="mt-3 mb-2">Technologies</h2>
+        <h2 className="mt-3 mb-1">Skills</h2>
         <ul className="list-unstyled">
           <li>Ruby on Rails</li>
           <li>PostgreSQL</li>
