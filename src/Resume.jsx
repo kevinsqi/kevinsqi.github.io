@@ -20,7 +20,7 @@ const Job = ({ name, position, startDate, endDate, children }) => (
 );
 
 const Resume = () => (
-  <Page>
+  <Page title="Resume">
     <div className="row">
       <div className="col-xs-12 mb-2">
         <h1>Kevin Qi</h1>

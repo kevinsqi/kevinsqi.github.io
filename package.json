@@ -13,6 +13,7 @@
     "history": "^2.1.1",
     "react": "^15.0.0",
     "react-dom": "^15.0.0",
+    "react-helmet": "^4.0.0",
     "react-router": "^2.4.1"
   },
   "devDependencies": {

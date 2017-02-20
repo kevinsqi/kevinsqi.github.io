@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import Nav from './Nav';
 import Project from './Project';
 import { PROJECTS, URLS } from './constants';
@@ -7,6 +8,13 @@ class App extends React.Component {
   render() {
     return (
       <div>
+        <Helmet
+          title="Kevin Qi"
+          meta={[
+            { name: 'description', content: 'Software engineer versed in web and design. Based in San Francisco.' }
+          ]}
+        />
+
         <div className="intro">
           <Nav />
 
@@ -22,6 +30,8 @@ class App extends React.Component {
         </div>
 
         <div className="container mt-3">
+          <h2 className="mb-2">Projects</h2>
+
           <section>
             <Project
               name="react-calendar-heatmap"
@@ -35,13 +45,13 @@ class App extends React.Component {
             </Project>
 
             <Project
-              name="patientslikeme.com/embed"
-              image="assets/patientslikeme_embed.png"
+              name="EventMapper"
+              image="assets/eventmapper.png"
               links={[
-                { text: 'View site', url: 'https://www.patientslikeme.com/embed' }
+                { text: 'View site', url: URLS.EVENTMAPPER_SITE }
               ]}
             >
-              An embeddable widget for PatientsLikeMe, which shows a quick glimpse of top treatments and side effects for a condition. Built with React.
+              {PROJECTS.EVENTMAPPER}
             </Project>
 
             <Project
@@ -56,13 +66,13 @@ class App extends React.Component {
             </Project>
 
             <Project
-              name="EventMapper"
-              image="assets/eventmapper.png"
+              name="patientslikeme.com/embed"
+              image="assets/patientslikeme_embed.png"
               links={[
-                { text: 'View site', url: URLS.EVENTMAPPER_SITE }
+                { text: 'View site', url: 'https://www.patientslikeme.com/embed' }
               ]}
             >
-              {PROJECTS.EVENTMAPPER}
+              An embeddable widget for PatientsLikeMe, which shows a quick glimpse of top treatments and side effects for a condition. Built with React.
             </Project>
 
             <Project
