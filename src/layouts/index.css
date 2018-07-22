@@ -1,7 +1,4 @@
-//
-// Bootstrap overrides
-//
-
+/* Bootstrap overrides */
 
 h1, h2, h3, h4, h5, h6, .navbar {
   font-family: Playfair Display, arial, sans-serif;
@@ -61,13 +58,11 @@ a:hover {
   border: 1px solid #dde;
 }
 
-//
-// Custom
-//
+/* Custom */
 
 .intro {
   background: #3e98c7;
-  background: url(/assets/background.jpg);
+  background: url(./background.jpg);
   background-size: cover;
   color: #fff;
   font-family: Playfair Display, arial, sans-serif;
@@ -77,9 +72,7 @@ a:hover {
   font-size: 2em;
 }
 
-//
-// Print (for resume)
-//
+/* Print (for resume) */
 
 @media print {
   * {
