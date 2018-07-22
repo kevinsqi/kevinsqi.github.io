@@ -10,7 +10,9 @@ const Page = ({ title, children }) => (
       <Nav />
     </div>
 
-    <div className="container">{children}</div>
+    <div className="container">
+      <div className="pt-5">{children}</div>
+    </div>
   </div>
 );
 

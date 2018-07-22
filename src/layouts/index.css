@@ -29,6 +29,7 @@ h1, h2, h3, h4, h5, h6, .display-font {
   margin-right: 1.3rem;
   color: rgba(255, 255, 255, 0.75);
 }
+
 .NavLink:last-child {
   margin-right: 0;
 }
@@ -37,35 +38,9 @@ h1, h2, h3, h4, h5, h6, .display-font {
   color: rgba(255, 255, 255, 1);
 }
 
-/*
-.navbar {
-  border-radius: 0;
-  padding: 40px 0;
-}
-
-.navbar-dark .navbar-brand {
-  font-size: 1.6em;
-  line-height: 1;
-  color: #ccc;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  font-size: 1em;
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
+.NavLink--active {
   color: rgba(255, 255, 255, 1);
 }
-
-.navbar-nav .nav-item + .nav-item {
-  margin-left: 1.5rem;
-}
-
-.navbar-nav .nav-link {
-  line-height: 1.6em;
-}
-*/
 
 h3 {
   font-size: 1.4em;
@@ -98,6 +73,7 @@ a:hover {
 .ResumeHeader {
   color: #888;
   font-size: 1.8em;
+  font-weight: normal;
   padding-bottom: 0.2em;
   border-bottom: 1px solid #ddd;
 }
@@ -105,5 +81,10 @@ a:hover {
 @media print {
   * {
     font-size: 12px;
+  }
+
+  /* Hide nav when printing */
+  .Nav {
+    display: none;
   }
 }

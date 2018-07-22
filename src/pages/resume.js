@@ -5,7 +5,7 @@ import { PROJECTS, URLS } from '../data';
 const Resume = () => (
   <Page title="Resume">
     <div className="row">
-      <div className="col-12 col-12 mt-4 mb-3">
+      <div className="col-12 col-12 mb-3">
         <h1>Kevin Qi</h1>
       </div>
 

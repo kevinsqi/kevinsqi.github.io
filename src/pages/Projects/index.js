@@ -3,6 +3,8 @@ import { PROJECTS, URLS } from '../../data';
 
 import img_react_calendar_heatmap from './react_calendar_heatmap.png';
 import img_save_tabbed_images from './save_tabbed_images.png';
+import img_patientslikeme_app from './patientslikeme_app.png';
+import img_eventmapper from './eventmapper.png';
 
 const Projects = () => {
   return (
@@ -38,7 +40,7 @@ const Projects = () => {
 
         <Project
           name="EventMapper"
-          image="assets/eventmapper.png"
+          image={img_eventmapper}
           links={[{ text: 'View site', url: URLS.EVENTMAPPER_SITE }]}
         >
           {PROJECTS.EVENTMAPPER}
@@ -46,7 +48,7 @@ const Projects = () => {
 
         <Project
           name="PatientsLikeMe App Treatment Reports"
-          image="assets/patientslikeme_connect_treatments.png"
+          image={img_patientslikeme_app}
           links={[{ text: 'View in app store', url: URLS.PLM_IOS_APP }]}
         >
           I worked on adding treatment reports to the native PatientsLikeMe iOS app. The reports
