@@ -6,7 +6,7 @@ const Page = ({ title, children }) => (
   <div>
     <Helmet title={`${title} - Kevin Qi` || 'Kevin Qi'} />
 
-    <div className="intro">
+    <div className="intro py-3">
       <Nav />
     </div>
 

@@ -1,6 +1,6 @@
 /* Bootstrap overrides */
 
-h1, h2, h3, h4, h5, h6, .navbar {
+h1, h2, h3, h4, h5, h6, .display-font {
   font-family: Work Sans, -apple-system, arial, sans-serif;
 }
 
@@ -14,6 +14,40 @@ h2 {
   letter-spacing: 1px;
 }
 
+.text-1 {
+  font-size: 2em;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.font-weight-light {
+  font-weight: 300;
+}
+
+.mb-6 {
+  margin-bottom: 80px;
+}
+
+.Nav {
+  display: flex;
+  align-items: center;
+}
+
+.NavLink {
+  margin-right: 1.3rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+.NavLink:last-child {
+  margin-right: 0;
+}
+
+.NavLink:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/*
 .navbar {
   border-radius: 0;
   padding: 40px 0;
@@ -41,6 +75,7 @@ h2 {
 .navbar-nav .nav-link {
   line-height: 1.6em;
 }
+*/
 
 h3 {
   font-size: 1.4em;
@@ -66,10 +101,6 @@ a:hover {
   background-size: cover;
   color: #fff;
   font-family: Work Sans, -apple-system, arial, sans-serif;
-}
-
-.intro .lead {
-  font-size: 2em;
 }
 
 /* Print (for resume) */

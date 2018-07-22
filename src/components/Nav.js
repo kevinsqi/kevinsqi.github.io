@@ -1,23 +1,28 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import classNames from 'classnames';
 
-const Nav = () => (
-  <nav className="navbar navbar-dark mb-2">
+const Nav = (props) => (
+  <nav className={classNames('display-font', props.className)}>
     <div className="container">
-      <Link to="/" className="navbar-brand">
-        Kevin Qi
-      </Link>
+      <div className="Nav">
+        <div className="flex-1">
+          <Link to="/" className="NavLink text-1">
+            Kevin Qi
+          </Link>
+        </div>
 
-      <div className="nav navbar-nav float-xs-right">
-        <Link to="/about" className="nav-item nav-link" activeClassName="active">
-          About
-        </Link>
-        <Link to="/resume" className="nav-item nav-link" activeClassName="active">
-          Resume
-        </Link>
-        <a className="nav-item nav-link" href="https://medium.com/@kevin_qi">
-          Blog
-        </a>
+        <div className="d-flex">
+          <Link to="/about" className="NavLink" activeClassName="NavLink--active">
+            About
+          </Link>
+          <Link to="/resume" className="NavLink" activeClassName="NavLink--active">
+            Resume
+          </Link>
+          <a className="NavLink" href="https://medium.com/@kevin_qi">
+            Blog
+          </a>
+        </div>
       </div>
     </div>
   </nav>
