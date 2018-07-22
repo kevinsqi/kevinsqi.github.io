@@ -15,7 +15,7 @@ const Nav = () => (
         <Link to="/resume" className="nav-item nav-link" activeClassName="active">
           Resume
         </Link>
-        <a className="nav-item nav-link" href="http://iqnivek.github.io/blog/">
+        <a className="nav-item nav-link" href="https://medium.com/@kevin_qi">
           Blog
         </a>
       </div>
