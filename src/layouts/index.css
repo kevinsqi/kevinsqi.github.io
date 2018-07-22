@@ -4,16 +4,6 @@ h1, h2, h3, h4, h5, h6, .display-font {
   font-family: Work Sans, -apple-system, arial, sans-serif;
 }
 
-h2 {
-  color: #888;
-  font-size: 1em;
-  font-weight: bold;
-  padding-bottom: 0.4em;
-  border-bottom: 1px solid #ddd;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
 .text-1 {
   font-size: 2em;
 }
@@ -103,7 +93,14 @@ a:hover {
   font-family: Work Sans, -apple-system, arial, sans-serif;
 }
 
-/* Print (for resume) */
+/* Resume */
+
+.ResumeHeader {
+  color: #888;
+  font-size: 1.8em;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #ddd;
+}
 
 @media print {
   * {
