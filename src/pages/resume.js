@@ -156,7 +156,7 @@ const Resume = () => (
 
         <h2 className="mt-3 mb-1">Education</h2>
         <h3>Carnegie Mellon University</h3>
-        <p>B.S. in Computer Science, 3.86/4.0 GPA, 2006-2009</p>
+        <p>B.S. in Computer Science, 2006-2009</p>
       </div>
 
       <div className="col-xs-12 col-sm-4">
@@ -165,10 +165,10 @@ const Resume = () => (
 
         <h2 className="mt-3 mb-1">Skills</h2>
         <ul className="list-unstyled">
+          <li>Python</li>
           <li>Ruby on Rails</li>
           <li>PostgreSQL</li>
           <li>Javascript, ES6, React</li>
-          <li>iOS (Swift)</li>
         </ul>
       </div>
     </div>

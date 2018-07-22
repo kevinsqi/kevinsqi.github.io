@@ -1,7 +1,7 @@
 /* Bootstrap overrides */
 
 h1, h2, h3, h4, h5, h6, .navbar {
-  font-family: Playfair Display, arial, sans-serif;
+  font-family: Work Sans, -apple-system, arial, sans-serif;
 }
 
 h2 {
@@ -65,7 +65,7 @@ a:hover {
   background: url(./background.jpg);
   background-size: cover;
   color: #fff;
-  font-family: Playfair Display, arial, sans-serif;
+  font-family: Work Sans, -apple-system, arial, sans-serif;
 }
 
 .intro .lead {
