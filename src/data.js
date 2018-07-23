@@ -7,9 +7,9 @@ export const URLS = {
 
 export const PROJECTS = {
   EVENTMAPPER:
-    'Maps out popular concerts in your city. Personal project built with Rails and the Songkick API.',
+    'A web app that maps out concerts in your city, sorted by popularity. Personal project built with Rails and the Songkick API.',
   REACT_CALENDAR_HEATMAP:
-    "An open source calendar heatmap component inspired by github's contribution graph, available on NPM. Built with React and SVG.",
+    "An open source calendar heatmap inspired by Github's contribution graph, developed while I was at PatientsLikeMe. It's published on npm, has 300+ stars on Github, and is used by outage.report to display outage history. Built with React and SVG.",
   SAVE_TABBED_IMAGES:
-    'An open source chrome extension for downloading images in tabs super quick, with 6,000+ weekly users. Personal project built with React.',
+    'An open source Chrome extension for downloading images in tabs super quick. Has more than 8,000 weekly users. Personal project built with React.',
 };

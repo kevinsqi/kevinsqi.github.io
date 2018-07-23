@@ -9,16 +9,13 @@ import img_eventmapper from './eventmapper.png';
 const Projects = () => {
   return (
     <div>
-      <h2 className="font-weight-light">Projects</h2>
+      <h2 className="font-weight-light text-secondary">Projects //</h2>
 
-      <section>
+      <section className="mt-5">
         <Project
           name="react-calendar-heatmap"
           image={img_react_calendar_heatmap}
-          links={[
-            { text: 'Github repo', url: URLS.REACT_CALENDAR_HEATMAP_GITHUB },
-            { text: 'Demo page', url: 'http://patientslikeme.github.io/react-calendar-heatmap/' },
-          ]}
+          links={[{ text: 'View project on Github', url: URLS.REACT_CALENDAR_HEATMAP_GITHUB }]}
         >
           {PROJECTS.REACT_CALENDAR_HEATMAP}
         </Project>
@@ -27,9 +24,9 @@ const Projects = () => {
           name="Save Tabbed Images"
           image={img_save_tabbed_images}
           links={[
-            { text: 'Github repo', url: URLS.SAVE_TABBED_IMAGES_GITHUB },
+            { text: 'View project on Github', url: URLS.SAVE_TABBED_IMAGES_GITHUB },
             {
-              text: 'Download in chrome web store',
+              text: 'View extension in Chrome web store',
               url:
                 'https://chrome.google.com/webstore/detail/save-tabbed-images/hhcoikfhkkadkgklepjkfgafmjoggefh',
             },
@@ -75,9 +72,9 @@ const Project = ({ name, image, url, links, children }) => {
         <h3>
           <a href={primaryUrl}>{name}</a>
         </h3>
-        {children}
+        <div className="mt-2">{children}</div>
 
-        <ul className="list-unstyled mt-1">
+        <ul className="list-unstyled mt-3">
           {links.map(({ text, url }) => (
             <li key={url}>
               <a href={url}>{text}</a>

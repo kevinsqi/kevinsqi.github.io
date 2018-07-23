@@ -8,6 +8,14 @@ h1, h2, h3, h4, h5, h6, .display-font {
   font-size: 2em;
 }
 
+.text-2 {
+  font-size: 1.7em;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .flex-1 {
   flex: 1;
 }
@@ -16,30 +24,12 @@ h1, h2, h3, h4, h5, h6, .display-font {
   font-weight: 300;
 }
 
+.font-weight-500 {
+  font-weight: 500;
+}
+
 .mb-6 {
   margin-bottom: 80px;
-}
-
-.Nav {
-  display: flex;
-  align-items: center;
-}
-
-.NavLink {
-  margin-right: 1.3rem;
-  color: rgba(255, 255, 255, 0.75);
-}
-
-.NavLink:last-child {
-  margin-right: 0;
-}
-
-.NavLink:hover {
-  color: rgba(255, 255, 255, 1);
-}
-
-.NavLink--active {
-  color: rgba(255, 255, 255, 1);
 }
 
 h3 {
@@ -67,6 +57,32 @@ a:hover {
   color: #fff;
   font-family: Work Sans, -apple-system, arial, sans-serif;
 }
+
+/* Nav */
+
+.Nav {
+  display: flex;
+  align-items: center;
+}
+
+.NavLink {
+  margin-right: 1.3rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.NavLink:last-child {
+  margin-right: 0;
+}
+
+.NavLink:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.NavLink--active {
+  color: rgba(255, 255, 255, 1);
+}
+
+
 
 /* Resume */
 

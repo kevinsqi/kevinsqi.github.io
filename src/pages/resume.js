@@ -6,7 +6,7 @@ const Resume = () => (
   <Page title="Resume">
     <div className="row">
       <div className="col-12 col-12 mb-3">
-        <h1>Kevin Qi</h1>
+        <h1>Resume - Kevin Qi</h1>
       </div>
 
       <div className="col-12 col-sm-8">
@@ -60,7 +60,7 @@ function SummarySection(props) {
       <p>
         I always aim to write readable, well-documented and tested code - while still iterating
         quickly. I like to have ownership of a product and take a holistic view beyond coding,
-        thinking about things like A/B testing, analytics, and design.
+        thinking about things like product impact, A/B testing, and scalable design systems.
       </p>
       <p>
         I'd love to work at a startup or small company where I can help build interesting, impactful

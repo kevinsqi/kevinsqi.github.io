@@ -7,7 +7,7 @@ const Nav = (props) => (
     <div className="container">
       <div className="Nav">
         <div className="flex-1">
-          <Link to="/" className="NavLink text-1">
+          <Link to="/" className="NavLink NavBrand text-2 uppercase font-weight-500">
             Kevin Qi
           </Link>
         </div>

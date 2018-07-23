@@ -5,7 +5,7 @@ import Projects from './Projects';
 
 const IndexPage = () => (
   <div>
-    <div className="intro py-5">
+    <div className="intro pt-4 pb-5">
       <Nav className="mb-6" />
 
       <div className="container">
