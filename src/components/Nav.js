@@ -7,7 +7,11 @@ const Nav = (props) => (
     <div className="container">
       <div className="Nav">
         <div className="flex-1">
-          <Link to="/" className="NavLink NavBrand text-2 uppercase font-weight-500">
+          <Link
+            to="/"
+            className="NavLink NavBrand text-2 uppercase font-weight-500"
+            activeClassName="NavLink--active"
+          >
             Kevin Qi
           </Link>
         </div>

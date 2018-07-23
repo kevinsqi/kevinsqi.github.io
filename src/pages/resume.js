@@ -42,6 +42,7 @@ const Resume = () => (
             <li>Ruby on Rails</li>
             <li>PostgreSQL</li>
             <li>Javascript, ES6, React</li>
+            <li>Conversant in Mandarin Chinese</li>
           </ul>
         </div>
       </div>

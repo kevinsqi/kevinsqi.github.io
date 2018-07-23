@@ -12,6 +12,10 @@ h1, h2, h3, h4, h5, h6, .display-font {
   font-size: 1.4em;
 }
 
+.text-3 {
+  font-size: 1.2em;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
