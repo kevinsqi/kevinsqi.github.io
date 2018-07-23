@@ -1,18 +1,9 @@
 # iqnivek.github.io
 
-## Development
+## Developing
 
-```
-npm install
-npm start
-```
+Install gatsby and run `gatsby develop`, and go to `localhost:8000`.
 
-Then go to `localhost:8080`.
+## Deploying
 
-## Publishing
-
-```
-npm run build
-```
-
-Then commit and push changes.
+Run `npm run deploy`

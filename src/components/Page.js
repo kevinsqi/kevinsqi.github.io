@@ -4,16 +4,14 @@ import Nav from './Nav';
 
 const Page = ({ title, children }) => (
   <div>
-    <Helmet
-      title={`${title} - Kevin Qi` || 'Kevin Qi'}
-    />
+    <Helmet title={`${title} - Kevin Qi` || 'Kevin Qi'} />
 
-    <div className="intro">
+    <div className="intro py-4">
       <Nav />
     </div>
 
     <div className="container">
-      {children}
+      <div className="pt-5">{children}</div>
     </div>
   </div>
 );
