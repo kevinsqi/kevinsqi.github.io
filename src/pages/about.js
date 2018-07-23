@@ -9,23 +9,26 @@ const About = () => (
         <div className="mt-4 display-font text-3">
           <p>
             I'm currently a full-stack software engineer at <a href="https://amino.com/">Amino</a>,
-            helping make it easier to find affordable healthcare.
+            helping make it easier for people to find affordable healthcare.
           </p>
           <p>
-            I'm enthusiastic about creating new visual tools and contributing to open source. I love
-            React and I've created two small libraries on npm,{' '}
+            I love working with React and I've published a few React libraries to npm &mdash;{' '}
             <a href="https://github.com/iqnivek/react-circular-progressbar">
               react-circular-progressbar
-            </a>{' '}
-            and{' '}
+            </a>
+            ,{' '}
             <a href="https://github.com/patientslikeme/react-calendar-heatmap">
               react-calendar-heatmap
-            </a>. Lately, I've been working on two music projects based on React,{' '}
-            <a href="https://github.com/iqnivek/react-piano">react-piano</a> and{' '}
-            <a href="https://github.com/iqnivek/microharmonic">microharmonic</a>. I've also helped
-            out as a mentor at{' '}
+            </a>, and <a href="https://github.com/iqnivek/react-piano">react-piano</a>
+            . I've also helped out as a mentor at{' '}
             <a href="https://nodeschool.io/sanfrancisco/">NodeSchool San Francisco</a>, which helps
             people learn Javascript.
+          </p>
+          <p>
+            I dabble in music as a hobby. I used to play trombone, but nowadays opt for the more
+            considerate piano and guitar. Lately, I've been learning about microtonal music and have
+            been working on a{' '}
+            <a href="https://github.com/iqnivek/microharmonic">microtonal keyboard app</a>.
           </p>
         </div>
       </div>

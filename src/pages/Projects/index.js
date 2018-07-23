@@ -1,6 +1,7 @@
 import React from 'react';
 import { PROJECTS } from '../../data';
 
+import img_react_piano from './react_piano.png';
 import img_react_circular_progressbar from './react_circular_progressbar.png';
 import img_react_calendar_heatmap from './react_calendar_heatmap.png';
 import img_save_tabbed_images from './save_tabbed_images.png';
@@ -29,6 +30,14 @@ const Projects = () => {
           links={[{ text: 'View project on Github', url: PROJECTS.react_calendar_heatmap.github }]}
         >
           {PROJECTS.react_calendar_heatmap.description}
+        </Project>
+
+        <Project
+          name="react-piano"
+          image={img_react_piano}
+          links={[{ text: 'View project on Github', url: PROJECTS.react_piano.github }]}
+        >
+          {PROJECTS.react_piano.description}
         </Project>
 
         <Project

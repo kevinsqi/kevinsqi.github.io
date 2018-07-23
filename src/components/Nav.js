@@ -7,20 +7,19 @@ const Nav = (props) => (
     <div className="container">
       <div className="Nav">
         <div className="flex-1">
-          <Link
-            to="/"
-            className="NavLink NavBrand text-2 uppercase font-weight-500"
-            activeClassName="NavLink--active"
-          >
+          <Link to="/" className="NavLink NavBrand text-2 uppercase font-weight-500">
             Kevin Qi
           </Link>
         </div>
 
         <div className="d-flex">
-          <Link to="/about" className="NavLink" activeClassName="NavLink--active">
+          <Link to="/" className="NavLink" activeClassName="NavLink--active" exact>
+            Home
+          </Link>
+          <Link to="/about" className="NavLink" activeClassName="NavLink--active" exact>
             About
           </Link>
-          <Link to="/resume" className="NavLink" activeClassName="NavLink--active">
+          <Link to="/resume" className="NavLink" activeClassName="NavLink--active" exact>
             Resume
           </Link>
           <a className="NavLink" href="https://github.com/iqnivek">

@@ -1,8 +1,14 @@
 export const PROJECTS = {
+  react_piano: {
+    github: 'https://github.com/iqnivek/react-piano',
+    description:
+      'An open source interactive piano component which supports custom sounds, touch/click/keyboard events, and fully configurable styling. Published on npm.',
+  },
+
   react_circular_progressbar: {
     github: 'https://github.com/iqnivek/react-circular-progressbar',
     description:
-      "An open source circular progressbar component for React, built with SVG and extensively customizable. It's published on npm and has over 13,000 weekly downloads, and has 200+ stars on Github.",
+      "An open source circular progressbar component for React, built with SVG and extensively customizable. It's published on npm with over 13,000 weekly downloads, and has 200+ stars on Github.",
   },
   react_calendar_heatmap: {
     github: 'https://github.com/patientslikeme/react-calendar-heatmap',
@@ -12,12 +18,12 @@ export const PROJECTS = {
   save_tabbed_images: {
     github: 'https://github.com/iqnivek/save_tabbed_images',
     description:
-      'An open source Chrome extension for downloading images in tabs super quick. Has more than 8,000 weekly users. Personal project built with React.',
+      'An open source Chrome extension for downloading images in tabs super quick. Has more than 8,000 weekly users. Built with React.',
   },
   eventmapper: {
     website: 'http://eventmapper.net',
     description:
-      'A web app that maps out concerts in your city, sorted by popularity. Personal project built with Rails and the Songkick API.',
+      'A web app that maps out concerts in your city, sorted by popularity. Built with Rails and the Songkick API.',
   },
   patientslikeme_app: {
     website: 'https://itunes.apple.com/us/app/connect-patientslikeme-control/id955272281',
