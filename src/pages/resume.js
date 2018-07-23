@@ -1,6 +1,6 @@
 import React from 'react';
 import Page from '../components/Page';
-import { PROJECTS, URLS } from '../data';
+import { PROJECTS } from '../data';
 
 const Resume = () => (
   <Page title="Resume">
@@ -91,15 +91,15 @@ function ExperienceSection(props) {
           </li>
           <li>
             Open-sourced two react components,{' '}
-            <a href={URLS.REACT_CALENDAR_HEATMAP_GITHUB}>react-calendar-heatmap</a> and{' '}
+            <a href={PROJECTS.react_calendar_heatmap.github}>react-calendar-heatmap</a> and{' '}
             <a href="https://github.com/iqnivek/react-circular-progressbar">
               react-circular-progressbar
             </a>.
           </li>
           <li>
             Quickly learned and handled development on{' '}
-            <a href={URLS.PLM_IOS_APP}>PLM Connect iOS app</a> for two months, adding treatment
-            reports and other features to the app.
+            <a href={PROJECTS.patientslikeme_app.website}>PLM Connect iOS app</a> for two months,
+            adding treatment reports and other features to the app.
           </li>
         </ul>
       </Job>
@@ -153,29 +153,29 @@ function ProjectsSection(props) {
     <div className={props.className}>
       <h3>react-calendar-heatmap</h3>
       <p>
-        <a className="text-muted" href={URLS.REACT_CALENDAR_HEATMAP_GITHUB}>
-          {URLS.REACT_CALENDAR_HEATMAP_GITHUB}
+        <a className="text-muted" href={PROJECTS.react_calendar_heatmap.github}>
+          {PROJECTS.react_calendar_heatmap.github}
         </a>
         <br />
-        {PROJECTS.REACT_CALENDAR_HEATMAP}
+        {PROJECTS.react_calendar_heatmap.description}
       </p>
 
       <h3>Save Tabbed Images</h3>
       <p>
-        <a className="text-muted" href={URLS.SAVE_TABBED_IMAGES_GITHUB}>
-          {URLS.SAVE_TABBED_IMAGES_GITHUB}
+        <a className="text-muted" href={PROJECTS.save_tabbed_images.github}>
+          {PROJECTS.save_tabbed_images.github}
         </a>
         <br />
-        {PROJECTS.SAVE_TABBED_IMAGES}
+        {PROJECTS.save_tabbed_images.description}
       </p>
 
       <h3>EventMapper</h3>
       <p>
-        <a className="text-muted" href={URLS.EVENTMAPPER_SITE}>
-          {URLS.EVENTMAPPER_SITE}
+        <a className="text-muted" href={PROJECTS.eventmapper.website}>
+          {PROJECTS.eventmapper.website}
         </a>
         <br />
-        {PROJECTS.EVENTMAPPER}
+        {PROJECTS.eventmapper.description}
       </p>
     </div>
   );
