@@ -40,8 +40,10 @@ const Resume = () => (
           <ul className="list-unstyled">
             <li>Python</li>
             <li>Ruby on Rails</li>
+            <li>NodeJS</li>
+            <li>React</li>
+            <li>Javascript, ES6, Flow</li>
             <li>PostgreSQL</li>
-            <li>Javascript, ES6, React</li>
             <li>Conversant in Mandarin Chinese</li>
           </ul>
         </div>
