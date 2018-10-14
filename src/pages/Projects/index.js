@@ -64,9 +64,7 @@ const Projects = () => {
           image={img_patientslikeme_app}
           links={[{ text: 'View in app store', url: PROJECTS.patientslikeme_app.website }]}
         >
-          I worked on adding treatment reports to the native PatientsLikeMe iOS app. The reports
-          have useful info on cost, effectiveness, side effects, and patient evaluations. Built with
-          Swift.
+          {PROJECTS.patientslikeme_app.description}
         </Project>
       </section>
     </div>

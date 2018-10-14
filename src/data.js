@@ -25,5 +25,7 @@ export const PROJECTS = {
   },
   patientslikeme_app: {
     website: 'https://itunes.apple.com/us/app/connect-patientslikeme-control/id955272281',
+    description:
+      'Treatment report functionality on native PatientsLikeMe iOS app, with useful info on cost, effectiveness, side effects, and patient evaluations. Built with Swift.',
   },
 };

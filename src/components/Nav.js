@@ -8,10 +8,9 @@ const Nav = (props) => (
       <div className="Nav">
         <div className="flex-1">
           <Link to="/" className="NavLink NavBrand text-2 uppercase font-weight-500">
-            Kevin Qi
+            Kevin&nbsp;Qi
           </Link>
         </div>
-
         <div className="d-flex">
           <Link to="/" className="NavLink" activeClassName="NavLink--active" exact>
             Home
