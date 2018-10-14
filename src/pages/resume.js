@@ -170,15 +170,6 @@ function ProjectsSection(props) {
         <br />
         {PROJECTS.save_tabbed_images.description}
       </p>
-
-      <h3>EventMapper</h3>
-      <p>
-        <a className="text-muted" href={PROJECTS.eventmapper.website}>
-          {PROJECTS.eventmapper.website}
-        </a>
-        <br />
-        {PROJECTS.eventmapper.description}
-      </p>
     </div>
   );
 }

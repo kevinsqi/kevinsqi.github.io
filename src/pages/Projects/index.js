@@ -55,11 +55,7 @@ const Projects = () => {
           {PROJECTS.save_tabbed_images.description}
         </Project>
 
-        <Project
-          name="EventMapper"
-          image={img_eventmapper}
-          links={[{ text: 'View site', url: PROJECTS.eventmapper.website }]}
-        >
+        <Project name="EventMapper" image={img_eventmapper} links={[]}>
           {PROJECTS.eventmapper.description}
         </Project>
 
@@ -78,20 +74,22 @@ const Projects = () => {
 };
 
 const Project = ({ name, image, url, links, children }) => {
-  const primaryUrl = links[0].url;
+  const primaryLink = links[0];
   return (
     <div className="row mb-5">
       <div className="col-xs-12 col-sm-6">
         <div className="text-xs-center">
-          <a href={primaryUrl}>
+          {primaryLink ? (
+            <a href={primaryLink.url}>
+              <img className="img-fluid rounded mb-3" src={image} />
+            </a>
+          ) : (
             <img className="img-fluid rounded mb-3" src={image} />
-          </a>
+          )}
         </div>
       </div>
       <div className="col-xs-12 col-sm-6">
-        <h3>
-          <a href={primaryUrl}>{name}</a>
-        </h3>
+        <h3>{primaryLink ? <a href={primaryLink.url}>{name}</a> : name}</h3>
         <div className="mt-2">{children}</div>
 
         <ul className="list-unstyled mt-3">

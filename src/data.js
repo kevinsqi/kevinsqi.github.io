@@ -2,9 +2,8 @@ export const PROJECTS = {
   react_piano: {
     github: 'https://github.com/iqnivek/react-piano',
     description:
-      'An open source interactive piano component which supports custom sounds, touch/click/keyboard events, and fully configurable styling. Published on npm.',
+      'An open source interactive piano component which supports custom sounds, touch/click/keyboard events, programmatic playback, and fully configurable styling. Published on npm.',
   },
-
   react_circular_progressbar: {
     github: 'https://github.com/iqnivek/react-circular-progressbar',
     description:
@@ -13,7 +12,7 @@ export const PROJECTS = {
   react_calendar_heatmap: {
     github: 'https://github.com/patientslikeme/react-calendar-heatmap',
     description:
-      "An open source calendar heatmap inspired by Github's contribution graph, developed while I was at PatientsLikeMe. It's published on npm, has 300+ stars on Github, and is used by outage.report to display outage history. Built with React and SVG.",
+      "An open source calendar heatmap inspired by Github's contribution graph, developed while I was at PatientsLikeMe. It's published on npm and has 400+ stars on Github. Built with React and SVG.",
   },
   save_tabbed_images: {
     github: 'https://github.com/iqnivek/save_tabbed_images',
@@ -21,7 +20,6 @@ export const PROJECTS = {
       'An open source Chrome extension for downloading images in tabs super quick. Has more than 8,000 weekly users. Built with React.',
   },
   eventmapper: {
-    website: 'http://eventmapper.net',
     description:
       'A web app that maps out concerts in your city, sorted by popularity. Built with Rails and the Songkick API.',
   },
