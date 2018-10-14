@@ -153,6 +153,15 @@ function ExperienceSection(props) {
 function ProjectsSection(props) {
   return (
     <div className={props.className}>
+      <h3>react-circular-progressbar</h3>
+      <p>
+        <a className="text-muted" href={PROJECTS.react_circular_progressbar.github}>
+          {PROJECTS.react_circular_progressbar.github}
+        </a>
+        <br />
+        {PROJECTS.react_circular_progressbar.description}
+      </p>
+
       <h3>react-calendar-heatmap</h3>
       <p>
         <a className="text-muted" href={PROJECTS.react_calendar_heatmap.github}>
@@ -160,6 +169,15 @@ function ProjectsSection(props) {
         </a>
         <br />
         {PROJECTS.react_calendar_heatmap.description}
+      </p>
+
+      <h3>react-piano</h3>
+      <p>
+        <a className="text-muted" href={PROJECTS.react_piano.github}>
+          {PROJECTS.react_piano.github}
+        </a>
+        <br />
+        {PROJECTS.react_piano.description}
       </p>
 
       <h3>Save Tabbed Images</h3>

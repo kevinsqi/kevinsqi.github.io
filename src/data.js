@@ -7,7 +7,7 @@ export const PROJECTS = {
   react_circular_progressbar: {
     github: 'https://github.com/iqnivek/react-circular-progressbar',
     description:
-      "An open source circular progressbar component for React, built with SVG and extensively customizable. It's published on npm with over 13,000 weekly downloads, and has 200+ stars on Github.",
+      "An open source circular progressbar component for React, built with SVG and extensively customizable. It's published on npm with over 15,000 weekly downloads and has 200+ stars on Github.",
   },
   react_calendar_heatmap: {
     github: 'https://github.com/patientslikeme/react-calendar-heatmap',
@@ -17,7 +17,7 @@ export const PROJECTS = {
   save_tabbed_images: {
     github: 'https://github.com/iqnivek/save_tabbed_images',
     description:
-      'An open source Chrome extension for downloading images in tabs super quick. Has more than 8,000 weekly users. Built with React.',
+      'An open source Chrome extension for downloading images in tabs super quick. Has more than 9,000 weekly users. Built with React.',
   },
   eventmapper: {
     description:
