@@ -110,8 +110,7 @@ function ExperienceSection(props) {
         <ul>
           <li>
             Designed and built new websites for clients like{' '}
-            <a href="http://www.neurosaveinc.com/">NeuroSave</a> and{' '}
-            <a href="http://bulent.kevinqi.com/">Bulent Guneralp</a>.
+            <a href="http://www.neurosaveinc.com/">NeuroSave</a>.
           </li>
         </ul>
       </Job>
