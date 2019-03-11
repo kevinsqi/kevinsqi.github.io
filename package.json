@@ -1,5 +1,5 @@
 {
-  "name": "iqnivek.github.io",
+  "name": "kevinsqi.github.io",
   "description": "Website for kevinqi.com",
   "private": true,
   "version": "1.0.0",
@@ -26,6 +26,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/iqnivek/iqnivek.github.io"
+    "url": "https://github.com/kevinsqi/kevinsqi.github.io"
   }
 }

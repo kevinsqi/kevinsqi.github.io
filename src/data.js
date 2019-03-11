@@ -1,11 +1,11 @@
 export const PROJECTS = {
   react_piano: {
-    github: 'https://github.com/iqnivek/react-piano',
+    github: 'https://github.com/kevinsqi/react-piano',
     description:
       'An open source interactive piano component which supports custom sounds, touch/click/keyboard events, programmatic playback, and fully configurable styling. Published on npm.',
   },
   react_circular_progressbar: {
-    github: 'https://github.com/iqnivek/react-circular-progressbar',
+    github: 'https://github.com/kevinsqi/react-circular-progressbar',
     description:
       "An open source circular progressbar component for React, built with SVG and extensively customizable. It's published on npm with over 15,000 weekly downloads and has 200+ stars on Github.",
   },
@@ -15,7 +15,7 @@ export const PROJECTS = {
       "An open source calendar heatmap inspired by Github's contribution graph, developed while I was at PatientsLikeMe. It's published on npm and has 400+ stars on Github. Built with React and SVG.",
   },
   save_tabbed_images: {
-    github: 'https://github.com/iqnivek/save_tabbed_images',
+    github: 'https://github.com/kevinsqi/save_tabbed_images',
     description:
       'An open source Chrome extension for downloading images in tabs super quick. Has more than 9,000 weekly users. Built with React.',
   },

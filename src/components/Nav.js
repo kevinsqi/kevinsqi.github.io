@@ -21,7 +21,7 @@ const Nav = (props) => (
           <Link to="/resume" className="NavLink" activeClassName="NavLink--active" exact>
             Resume
           </Link>
-          <a className="NavLink" href="https://github.com/iqnivek">
+          <a className="NavLink" href="https://github.com/kevinsqi">
             Github
           </a>
           <a className="NavLink" href="https://medium.com/@kevin_qi">

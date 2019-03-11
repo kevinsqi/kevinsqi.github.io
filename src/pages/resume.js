@@ -31,7 +31,7 @@ const Resume = () => (
         <ContactSection
           className="mt-3 mb-5"
           email="iqnivek@gmail.com"
-          github="iqnivek"
+          github="kevinsqi"
           website="http://kevinqi.com"
         />
 
@@ -94,7 +94,7 @@ function ExperienceSection(props) {
           <li>
             Open-sourced two react components,{' '}
             <a href={PROJECTS.react_calendar_heatmap.github}>react-calendar-heatmap</a> and{' '}
-            <a href="https://github.com/iqnivek/react-circular-progressbar">
+            <a href="https://github.com/kevinsqi/react-circular-progressbar">
               react-circular-progressbar
             </a>.
           </li>
