@@ -76,6 +76,11 @@ function SummarySection(props) {
 function ExperienceSection(props) {
   return (
     <div className={props.className}>
+      <Job name="Amino" position="Senior software engineer" startDate="Jan 2017" endDate="present">
+        <ul>
+          <li>Lead engineer on the HSA banking product.</li>
+        </ul>
+      </Job>
       <Job
         name="PatientsLikeMe"
         position="Senior software engineer"

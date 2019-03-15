@@ -20,13 +20,12 @@ const About = () => (
             <a href="https://github.com/patientslikeme/react-calendar-heatmap">
               react-calendar-heatmap
             </a>, and <a href="https://github.com/kevinsqi/react-piano">react-piano</a>
-            . I've also helped out as a mentor at{' '}
+            . I also helped out as a mentor at{' '}
             <a href="https://nodeschool.io/sanfrancisco/">NodeSchool San Francisco</a>, which helps
             people learn Javascript.
           </p>
           <p>
-            I dabble in music as a hobby. I used to play trombone, but nowadays opt for the more
-            considerate piano and guitar. Lately, I've been learning about microtonal music and have
+            I dabble in music as a hobby. Lately, I've been learning about microtonal music and have
             been working on a{' '}
             <a href="https://github.com/kevinsqi/microharmonic">microtonal keyboard app</a>.
           </p>
