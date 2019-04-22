@@ -32,18 +32,18 @@ const Resume = () => (
           className="mt-3 mb-5"
           email="iqnivek@gmail.com"
           github="kevinsqi"
-          website="http://kevinqi.com"
+          website="https://kevinqi.com"
         />
 
         <h2 className="ResumeHeader">Skills</h2>
         <div className="mt-3 mb-5">
           <ul className="list-unstyled">
             <li>Python</li>
-            <li>Ruby on Rails</li>
-            <li>NodeJS</li>
-            <li>React</li>
-            <li>Javascript, ES6, Flow</li>
+            <li>Ruby, Ruby on Rails</li>
             <li>PostgreSQL</li>
+            <li>Javascript, Typescript, Flow, ES6</li>
+            <li>NodeJS</li>
+            <li>React, Redux</li>
             <li>Conversant in Mandarin Chinese</li>
           </ul>
         </div>

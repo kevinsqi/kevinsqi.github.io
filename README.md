@@ -15,4 +15,4 @@ The server will be running on `localhost:8000`.
 
 ## Deploying
 
-Run `npm run deploy`.
+Run `yarn run deploy`.
