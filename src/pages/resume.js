@@ -4,6 +4,10 @@ import { PROJECTS } from '../data';
 
 const Resume = () => (
   <Page title="Resume">
+    <div className="alert alert-secondary mb-5 hide-for-printing">
+      To save this as a PDF, open the Print dialog and select "Save as PDF".
+    </div>
+
     <div className="row">
       <div className="col-12 col-12 mb-3">
         <h1>Resume - Kevin Qi</h1>
@@ -16,7 +20,7 @@ const Resume = () => (
         <h2 className="ResumeHeader">Experience</h2>
         <ExperienceSection className="mt-3 mb-5" />
 
-        <h2 className="ResumeHeader">Projects</h2>
+        <h2 className="ResumeHeader">Selected projects</h2>
         <ProjectsSection className="mt-3 mb-5" />
 
         <h2 className="ResumeHeader">Education</h2>
@@ -38,12 +42,11 @@ const Resume = () => (
         <h2 className="ResumeHeader">Skills</h2>
         <div className="mt-3 mb-5">
           <ul className="list-unstyled">
-            <li>Python</li>
+            <li>Javascript, Typescript, Flow, NodeJS</li>
+            <li>React, Redux</li>
+            <li>Python, Flask</li>
             <li>Ruby, Ruby on Rails</li>
             <li>PostgreSQL</li>
-            <li>Javascript, Typescript, Flow, ES6</li>
-            <li>NodeJS</li>
-            <li>React, Redux</li>
             <li>Conversant in Mandarin Chinese</li>
           </ul>
         </div>
@@ -56,18 +59,15 @@ function SummarySection(props) {
   return (
     <div className={props.className}>
       <p>
-        Hi! I'm a full-stack web developer with an affinity for frontend development and design. I
-        have 6 years of experience working at web startups, and have helped introduce tech and
-        engineering practices such as React, ES6, integration testing, and code review.
+        I'm a full-stack software engineer with 8 years of experience working at web startups. I
+        write readable, well-documented and tested code&mdash;while still iterating quickly. I
+        believe in being involved with a product holistically, including working on specs, metrics,
+        and product impact. I try to make a strong team impact by introducing scalable design
+        systems and reusable components. I also enjoy writing open source projects.
       </p>
       <p>
-        I always aim to write readable, well-documented and tested code - while still iterating
-        quickly. I like to have ownership of a product and take a holistic view beyond coding,
-        thinking about things like product impact, A/B testing, and scalable design systems.
-      </p>
-      <p>
-        I'd love to work at a startup or small company where I can help build interesting, impactful
-        products.
+        I'm interested in working at companies with driven teams where I can help build interesting,
+        impactful products.
       </p>
     </div>
   );
@@ -99,9 +99,7 @@ function ExperienceSection(props) {
           <li>
             Open-sourced two react components,{' '}
             <a href={PROJECTS.react_calendar_heatmap.github}>react-calendar-heatmap</a> and{' '}
-            <a href="https://github.com/kevinsqi/react-circular-progressbar">
-              react-circular-progressbar
-            </a>.
+            <a href={PROJECTS.react_circular_progressbar.github}>react-circular-progressbar</a>.
           </li>
           <li>
             Quickly learned and handled development on{' '}
@@ -111,28 +109,17 @@ function ExperienceSection(props) {
         </ul>
       </Job>
 
-      <Job name="Freelance web developer" startDate="Apr 2014" endDate="Nov 2014">
-        <ul>
-          <li>
-            Designed and built new websites for clients like{' '}
-            <a href="http://www.neurosaveinc.com/">NeuroSave</a>.
-          </li>
-        </ul>
-      </Job>
-
       <Job name="Panjiva" position="Software engineer" startDate="May 2011" endDate="Apr 2014">
         <ul>
           <li>
-            Built a shipment search interface with sophisticated refinements and filtering, and an
-            interface to visualize Chinese trade data
+            Revamped a shipment search interface with sophisticated refinements and filtering, and
+            built an interface to visualize Chinese trade data. Worked on numerous projects on
+            homepage, search, subscription flows, and user dashboard. Improved conversion rate of
+            high-traffic public company profiles.
           </li>
           <li>
             Helped introduce performance monitoring via NewRelic, acceptance testing, easier A/B
             testing, and established a code review process.
-          </li>
-          <li>
-            Worked on numerous projects on homepage, search, subscription flows, and user dashboard.
-            Improved conversion rate of high-traffic public company profiles.
           </li>
         </ul>
       </Job>
@@ -146,7 +133,7 @@ function ExperienceSection(props) {
         <ul>
           <li>
             Developed major frontend improvements to an emergency preparedness training application
-            built on Ruby on Rails.
+            built with Ruby on Rails.
           </li>
         </ul>
       </Job>
@@ -182,15 +169,6 @@ function ProjectsSection(props) {
         </a>
         <br />
         {PROJECTS.react_piano.description}
-      </p>
-
-      <h3>Save Tabbed Images</h3>
-      <p>
-        <a className="text-muted" href={PROJECTS.save_tabbed_images.github}>
-          {PROJECTS.save_tabbed_images.github}
-        </a>
-        <br />
-        {PROJECTS.save_tabbed_images.description}
       </p>
     </div>
   );

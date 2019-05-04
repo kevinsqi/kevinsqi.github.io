@@ -1,6 +1,12 @@
 /* Bootstrap overrides */
 
-h1, h2, h3, h4, h5, h6, .display-font {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-font {
   font-family: Work Sans, -apple-system, arial, sans-serif;
 }
 
@@ -88,15 +94,13 @@ a:hover {
   border-bottom: 1px solid #fff;
 }
 
-
-
 /* Resume */
 
 .ResumeHeader {
   color: #888;
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-weight: normal;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.4em;
   border-bottom: 1px solid #ddd;
 }
 
@@ -106,7 +110,7 @@ a:hover {
   }
 
   /* Hide nav when printing */
-  .Nav {
+  .hide-for-printing {
     display: none;
   }
 }

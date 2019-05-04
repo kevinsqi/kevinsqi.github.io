@@ -7,7 +7,7 @@ export const PROJECTS = {
   react_circular_progressbar: {
     github: 'https://github.com/kevinsqi/react-circular-progressbar',
     description:
-      "An open source circular progressbar component for React, built with SVG and extensively customizable. It's published on npm with over 30,000 weekly downloads and has 300+ stars on Github.",
+      "An open source circular progressbar for React, written in Typescript and extensively customizable. It's published on npm with over 30,000 weekly downloads and has 300+ stars on Github.",
   },
   react_calendar_heatmap: {
     github: 'https://github.com/patientslikeme/react-calendar-heatmap',

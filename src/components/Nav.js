@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import classNames from 'classnames';
 
 const Nav = (props) => (
-  <nav className={classNames('display-font', props.className)}>
+  <nav className={classNames('display-font hide-for-printing', props.className)}>
     <div className="container">
       <div className="Nav">
         <div className="flex-1">
