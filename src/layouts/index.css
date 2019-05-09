@@ -101,7 +101,7 @@ a:hover {
   font-size: 1.4em;
   font-weight: normal;
   padding-bottom: 0.4em;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 3px solid #ddd;
 }
 
 @media print {
