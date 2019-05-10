@@ -36,7 +36,7 @@ const Resume = () => (
           className="mt-3 mb-5"
           email="iqnivek@gmail.com"
           github="kevinsqi"
-          website="https://kevinqi.com"
+          website="https://www.kevinqi.com"
         />
 
         <h2 className="ResumeHeader">Skills</h2>
