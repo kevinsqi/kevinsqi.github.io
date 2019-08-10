@@ -34,9 +34,6 @@ const Nav = (props) => (
           <a className="NavLink display-font" href="https://github.com/kevinsqi">
             Github
           </a>
-          <a className="NavLink display-font" href="https://medium.com/@kevin_qi">
-            Blog
-          </a>
         </div>
       </div>
     </div>
