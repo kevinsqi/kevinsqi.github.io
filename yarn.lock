@@ -7678,6 +7678,11 @@ type-of@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/type-of/-/type-of-2.0.1.tgz#e72a1741896568e9f628378d816d6912f7f23972"
 
+typeface-inter@^3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/typeface-inter/-/typeface-inter-3.7.0.tgz#fccacffe2288b57e1f327dcdcda8607965f36ec7"
+  integrity sha512-xKnJVcyJJ2M8CfWjZQI+JmjmGigtuvKgsftYwcd9DpHM0t+zcLfA8IIDK76+wywVLmqc3PHOS2mo/7uUPJTrxA==
+
 typeface-work-sans@^0.0.54:
   version "0.0.54"
   resolved "https://registry.yarnpkg.com/typeface-work-sans/-/typeface-work-sans-0.0.54.tgz#1bf57d6a2c7dfa6f820adbe12d8c2291835f07c4"

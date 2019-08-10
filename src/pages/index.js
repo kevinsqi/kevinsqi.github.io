@@ -11,7 +11,7 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           <div className="col-xs-12 col-sm-8">
-            <p className="font-weight-light text-1 mb-0">
+            <p className="display-font font-weight-light text-1 mb-0">
               Software engineer versed in web and design. Based in San Francisco.
             </p>
           </div>
