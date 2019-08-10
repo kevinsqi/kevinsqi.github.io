@@ -12,23 +12,20 @@ const About = () => (
             helping make it easier for people to find affordable healthcare.
           </p>
           <p>
-            I love working with React and have published a few React libraries to npm&mdash;
-            <a href="https://github.com/kevinsqi/react-circular-progressbar">
-              react-circular-progressbar
-            </a>
-            ,{' '}
-            <a href="https://github.com/patientslikeme/react-calendar-heatmap">
-              react-calendar-heatmap
-            </a>, and <a href="https://github.com/kevinsqi/react-piano">react-piano</a>
+            I love open source and React and have published a few React libraries to npm&mdash; a{' '}
+            <a href="https://github.com/kevinsqi/react-circular-progressbar">progress bar</a>
+            , <a href="https://github.com/patientslikeme/react-calendar-heatmap">heatmap</a>, and{' '}
+            <a href="https://github.com/kevinsqi/react-piano">piano</a>
             . I also help out as a mentor at{' '}
             <a href="https://nodeschool.io/sanfrancisco/">NodeSchool San Francisco</a>, which helps
             people of all backgrounds learn Javascript.
           </p>
           <p>
-            I dabble in music as a hobby - guitar and piano, but previously <em>trombone</em>. I've
-            been learning about microtonal music and have been working on a{' '}
-            <a href="https://github.com/kevinsqi/microharmonic">microtonal keyboard app</a>, as well
-            as a yet-unreleased piano app.
+            A few other topics I'm interested in are music and music software, machine learning
+            applications, synthetic biology, and climate change prevention.
+          </p>
+          <p>
+            You can reach me at <a href="mailto:iqnivek@gmail.com">iqnivek@gmail.com</a>
           </p>
         </div>
       </div>

@@ -6,13 +6,13 @@ import Projects from './Projects';
 const IndexPage = () => (
   <div>
     <div className="intro pt-4 pb-5">
-      <Nav className="mb-6" />
-
-      <div className="container">
+      <Nav />
+      <div className="container" style={{ marginTop: 150 }}>
         <div className="row">
-          <div className="col-xs-12 col-sm-8">
+          <div className="col-xs-12 col-sm-10">
             <p className="display-font font-weight-light text-1 mb-0">
-              Software engineer versed in web and design. Based in San Francisco.
+              Software engineer interested in open source and building intuitive interfaces. Based
+              in San Francisco.
             </p>
           </div>
         </div>
