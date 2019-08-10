@@ -7,17 +7,17 @@ export const PROJECTS = {
   react_circular_progressbar: {
     github: 'https://github.com/kevinsqi/react-circular-progressbar',
     description:
-      "An open source circular progressbar for React, written in Typescript and extensively customizable. It's published on npm with over 30,000 weekly downloads and has 300+ stars on Github.",
+      "An open source circular progressbar for React, written in Typescript and extensively customizable. It's published on npm with over 30,000 weekly downloads and has 400+ stars on Github.",
   },
   react_calendar_heatmap: {
-    github: 'https://github.com/patientslikeme/react-calendar-heatmap',
+    github: 'https://github.com/kevinsqi/react-calendar-heatmap',
     description:
-      "An open source calendar heatmap inspired by Github's contribution graph, developed while I was at PatientsLikeMe. It's published on npm and has 500+ stars on Github. Built with React and SVG.",
+      "An open source calendar heatmap inspired by Github's contribution graph. It's published on npm and has 500+ stars on Github. Built with React and SVG.",
   },
   save_tabbed_images: {
     github: 'https://github.com/kevinsqi/save_tabbed_images',
     description:
-      'An open source Chrome extension for downloading images in tabs super quick. Has more than 9,000 weekly users. Built with React.',
+      'An open source Chrome extension for downloading images in tabs, with more than 10,000 weekly users. Built with React.',
   },
   eventmapper: {
     description:
