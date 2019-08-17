@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kevin Qi]]></title><description><![CDATA[Software engineer interested in open source and building intuitive interfaces. Based in San Francisco.]]></description><link>https://www.kevinqi.com</link><generator>RSS for Node</generator><lastBuildDate>Sat, 17 Aug 2019 19:02:43 GMT</lastBuildDate><item><title><![CDATA[Three talks that changed the way I think about programming]]></title><description><![CDATA[Here are a couple talks with “ah-ha” moments that made me think about programming in a new way. Cheng Lou — “On the Spectrum of Abstraction…]]></description><link>https://www.kevinqi.com/three-talks/</link><guid isPermaLink="false">https://www.kevinqi.com/three-talks/</guid><pubDate>Sun, 06 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Here are a couple talks with “ah-ha” moments that made me think about programming in a new way.&lt;/p&gt;
+&lt;h2&gt;Cheng Lou — “On the Spectrum of Abstraction”&lt;/h2&gt;
+
+          &lt;div
+            class=&quot;gatsby-resp-iframe-wrapper&quot;
+            style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden;margin-bottom: 1.0725rem&quot;
+          &gt;
+            &lt;iframe src=&quot;https://www.youtube.com/embed/mVVNJKv9esE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen style=&quot;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          &quot;&gt;&lt;/iframe&gt;
+          &lt;/div&gt;
+          
+&lt;p&gt;This talk is particularly useful for library and framework authors, as it delves into how to think about the level of abstraction a library should provide. That doesn’t sound widely applicable at first, but as complex client side apps emerge, it’s becoming more and more common for frontend developers to write generic component libraries and to have to think about what functionality and what abstractions they provide.&lt;/p&gt;
+&lt;p&gt;The idea that really resonated with me is the visualization of a tree of “use cases”, where leaf nodes are concrete use cases and parent nodes are the abstract tools that enable those use cases. If you create a tool that’s very specific and tailored, you only cover a few leaf nodes. If you create a tool that’s very abstract, you can potentially cover many leaf nodes, but there will then be additional layers of abstraction between the tool and the eventual leaf node use-case. A library should strike the balance between that immediate usefulness, and the ability to cover many “leaf nodes”. I found this to be an interesting and useful mental image to have.&lt;/p&gt;
+&lt;p&gt;Another core idea was that enforcing restrictions on expressivity can be a beneficial tool. The corollary to that idea is that increasing expressiveness can be a negative trade-off. The prime example is how React approaches rendering vs. the approach of using templates. Templates are “data” — they can be fully expressed as serializable data structures, whereas React rendering can utilize functions, which can’t be expressed as data. Cheng said that this was actually a concession, not an inherently desired trait, which was something that was unexpected and thought provoking. By restricting expressiveness by using templates, frameworks like Ember can apply performance optimizations that React cannot. But the expressiveness gained with functions was worth the tradeoff.&lt;/p&gt;
+&lt;h2&gt;Sandi Metz — ”The Wrong Abstraction”&lt;/h2&gt;
+&lt;p&gt;On the topic of abstractions — &lt;a href=&quot;https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction&quot;&gt;The Wrong Abstraction&lt;/a&gt; is based a talk by Sandi Metz. The idea is straightforward: it’s better to have code duplication than to have code reuse at the “wrong level of abstraction”, sharing code across disparate areas when the code really shouldn’t be shared at all.&lt;/p&gt;
+&lt;p&gt;The idea that I found enlightening was the solution to the problem:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you find yourself in this situation, resist being driven by sunk costs. When dealing with the wrong abstraction, the fastest way forward is back.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;She suggests re-introducing duplication by inlining the abstracted code back into every caller. This approach is interesting because it’s rather obvious in principle, but something that I wouldn’t have thought of when approaching a particular chunk of over-shared code in practice.&lt;/p&gt;
+&lt;h2&gt;Gary Bernhardt — “Boundaries”&lt;/h2&gt;
+
+          &lt;div
+            class=&quot;gatsby-resp-iframe-wrapper&quot;
+            style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden;margin-bottom: 1.0725rem&quot;
+          &gt;
+            &lt;iframe src=&quot;https://www.youtube.com/embed/yTkzNHF6rMs&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen style=&quot;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          &quot;&gt;&lt;/iframe&gt;
+          &lt;/div&gt;
+          
+&lt;p&gt;This talk covers a wide range of concepts: “functional core vs. imperative shell”, immutability, and parallelism. The concept I found most immediately applicable were Gary’s thoughts about integration tests vs. unit tests and mocking/stubbing.&lt;/p&gt;
+&lt;p&gt;Going into the talk, I was strongly on board with integration testing as the best primary means of testing. However, Gary’s illustration of the exponential “path count” that’s inherent to integration testing and the increased cost in test suite runtime are solid arguments against an extremely integration-heavy approach, and are problems that I’ve run into in my own experience as well.&lt;/p&gt;
+&lt;p&gt;Instead, Gary suggests a balanced approach to unit and integration testing. This is the slide that really nailed down the concept:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e1b99f1e3060c42b8cef07d38fd38b13/96ffc/boundaries-slide.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 50.074294205052006%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsSAAALEgHS3X78AAACYklEQVQoz22SS08TYRiF+0/cdEeM0Y0LF25MNEY0xIUSrzEaoyZuFBNRBG8IASSArRDl1iIgBVpL6QWYlmk7LW1nprdpS1uE8Esevw5iNHFx8s58kzzznnM+iyfgYzXwnSX3FE6njcnxQWy2fjakIDv1AqWyRqmkmbO2U2Tnp0FNnFdr+f+ogEWOBtiY6GC28x6Sowu/vQ3/wkeCQR96JMRawEPI7zalyGtkUjKFQsoE13/D6+JHDTWeLQHHN5Kvn6EOdJIbekvJ3s1yVztSVKK6nSUWCZJMhImuryCv+YjK66iZOJoaJ68J5ZLiPYauK2xXcwI44WCu5SzTN5p5cvoEn6+cYbj5EhvxMGVVoagnTKtFPY4eC2JkFQpaDDUWEmcHkEolS7mim7Yt7uVFHl4+z/2Wc1w9dZLW48d4fL2VuBLB0BTTVsPO7v42quQl4Zkh+WOWXGKdnb0yNQFpWD2URYqEkeSI0CbxraQ5l70e5HCQbEwivO4jsuEjnxe57VUO8tot/cnv34IEcLT/Fa7JIZwj7xntfo7b+Ql77wtWvXOUixmktRUhAQ16SET8qFqChBxiS+SaFgU1VNST6MJNLreFxd7bLiAjjPW85NbFCyw5bIwPirZX5qlX82SUMAUB1lObRN0zRFcXSUo+UUrMhBiGam7XyNIspa/tLgtf+nh05ybWI1aGP7xhbqwH78I0xaRMVQS+u1/BUKOkfPMorglzpgMuto30QY5/XR3LtaYmbO+e8uB2K0etVqZGuhkb6MA1+xVDXOhcfstUNptAS2+KrUTbYjstI5tnh98P9QsWVnUdw6P5LQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;boundaries slide&quot;
+        title=&quot;boundaries slide&quot;
+        src=&quot;/static/e1b99f1e3060c42b8cef07d38fd38b13/b9e4f/boundaries-slide.png&quot;
+        srcset=&quot;/static/e1b99f1e3060c42b8cef07d38fd38b13/cf440/boundaries-slide.png 148w,
+/static/e1b99f1e3060c42b8cef07d38fd38b13/d2d38/boundaries-slide.png 295w,
+/static/e1b99f1e3060c42b8cef07d38fd38b13/b9e4f/boundaries-slide.png 590w,
+/static/e1b99f1e3060c42b8cef07d38fd38b13/96ffc/boundaries-slide.png 673w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Gary’s argument here is that you put all your “decisions” in a functional core — the stuff that also tends to lead to an exponential explosion in testing paths. And you unit test that, because unit testing is fast and well-suited for testing multiple paths.&lt;/p&gt;
+&lt;p&gt;With that done, you can test the integration of dependencies using integration tests and avoid the exponential branching paths (since that’s covered by unit tests).&lt;/p&gt;</content:encoded></item></channel></rss>
