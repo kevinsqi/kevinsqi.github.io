@@ -2,19 +2,18 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Bio from '../components/bio';
-import Layout from '../components/Layout';
+import Page from '../components/Page';
 import SEO from '../components/seo';
 
-class BlogIndex extends React.Component {
+class Blog extends React.Component {
   render() {
     const { data } = this.props;
     const siteTitle = data.site.siteMetadata.title;
     const posts = data.allMarkdownRemark.edges;
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
-        <Bio />
+      <Page title={siteTitle}>
+        <SEO title="Blog" />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
@@ -37,12 +36,12 @@ class BlogIndex extends React.Component {
             </article>
           );
         })}
-      </Layout>
+      </Page>
     );
   }
 }
 
-export default BlogIndex;
+export default Blog;
 
 export const pageQuery = graphql`
   query {
