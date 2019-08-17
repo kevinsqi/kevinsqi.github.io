@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "kevinsqi.github.io",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "description": "Website for kevinqi.com",
+  "version": "1.0.0",
+  "author": "Kevin Qi <iqnivek@gmail.com>",
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "^2.13.67",
@@ -34,15 +31,12 @@
   "devDependencies": {
     "prettier": "^1.18.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
+  "homepage": "https://www.kevinqi.com",
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "https://github.com/kevinsqi/kevinsqi.github.io"
   },
   "scripts": {
     "build": "gatsby build",
