@@ -34,6 +34,9 @@ const Nav = (props) => (
           <a className="NavLink display-font" href="https://github.com/kevinsqi">
             Github
           </a>
+          <Link to="/blog" className="NavLink display-font" activeClassName="NavLink--active" exact>
+            Blog
+          </Link>
         </div>
       </div>
     </div>
