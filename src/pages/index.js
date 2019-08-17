@@ -1,10 +1,12 @@
 import React from 'react';
-import Link from 'gatsby-link';
-import Nav from '../components/Nav';
 import Projects from './Projects';
+import Nav from '../components/Nav';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const IndexPage = () => (
-  <div>
+  <Layout>
+    <SEO title="Home" />
     <div className="intro pt-4 pb-5">
       <Nav />
       <div className="container" style={{ marginTop: 150 }}>
@@ -22,7 +24,7 @@ const IndexPage = () => (
     <div className="container mt-5">
       <Projects />
     </div>
-  </div>
+  </Layout>
 );
 
 export default IndexPage;

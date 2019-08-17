@@ -1,4 +1,4 @@
-# Kevin Qi's website
+# kevinqi.com
 
 ## Developing
 

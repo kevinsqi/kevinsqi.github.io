@@ -1,10 +1,12 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+
 import Nav from './Nav';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const Page = ({ title, children }) => (
-  <div>
-    <Helmet title={`${title} - Kevin Qi` || 'Kevin Qi'} />
+  <Layout>
+    <SEO title={title} />
 
     <div className="intro py-4">
       <Nav />
@@ -13,7 +15,7 @@ const Page = ({ title, children }) => (
     <div className="container">
       <div className="pt-5">{children}</div>
     </div>
-  </div>
+  </Layout>
 );
 
 export default Page;

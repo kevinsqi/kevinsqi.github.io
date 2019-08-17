@@ -2,6 +2,7 @@
 
 html, body {
   font-family: inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 h1,
@@ -116,4 +117,35 @@ a:hover {
   .hide-for-printing {
     display: none;
   }
+}
+
+/* Blog */
+
+.BlogPost {
+  font-size: 1.2rem;  /* .text-3 */
+}
+
+.BlogPost blockquote {
+  margin-left: -1.75rem;
+  margin-right: 1.75rem;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-left: 1.42188rem;
+  padding-right: 0;
+  padding-top: 0;
+  color: inherit;
+  font-style: italic;
+  border-left: 0.32813rem solid hsla(0,0%,0%,0.9);
+  border-left-color: inherit;
+  opacity: 0.8; 
+}
+
+.BlogPost h1,
+.BlogPost h2,
+.BlogPost h3 {
+  margin-top: 2rem;
+}
+
+.BlogPost iframe {
+  margin-top: 1rem;
 }

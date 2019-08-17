@@ -73,17 +73,15 @@ const Projects = () => {
 
 const Project = ({ name, image, url, links, children }) => {
   const primaryLink = links[0];
+  const img = (
+    <img className="img-fluid rounded mb-3" src={image} alt={`${name} project screenshot`} />
+  );
+
   return (
     <div className="row mb-5">
       <div className="col-xs-12 col-sm-6">
         <div className="text-xs-center">
-          {primaryLink ? (
-            <a href={primaryLink.url}>
-              <img className="img-fluid rounded mb-3" src={image} />
-            </a>
-          ) : (
-            <img className="img-fluid rounded mb-3" src={image} />
-          )}
+          {primaryLink ? <a href={primaryLink.url}>{img}</a> : img}
         </div>
       </div>
       <div className="col-xs-12 col-sm-6">
