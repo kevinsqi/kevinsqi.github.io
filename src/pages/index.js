@@ -1,28 +1,75 @@
-import React from 'react';
-import Link from 'gatsby-link';
-import Nav from '../components/Nav';
-import Projects from './Projects';
+import React from "react"
+import { Link, graphql } from "gatsby"
 
-const IndexPage = () => (
-  <div>
-    <div className="intro pt-4 pb-5">
-      <Nav />
-      <div className="container" style={{ marginTop: 150 }}>
-        <div className="row">
-          <div className="col-xs-12 col-sm-10">
-            <p className="display-font font-weight-light text-1 mb-0">
-              Software engineer interested in open source and building intuitive interfaces. Based
-              in San Francisco.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+import Bio from "../components/bio"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import { rhythm } from "../utils/typography"
 
-    <div className="container mt-5">
-      <Projects />
-    </div>
-  </div>
-);
+class BlogIndex extends React.Component {
+  render() {
+    const { data } = this.props
+    const siteTitle = data.site.siteMetadata.title
+    const posts = data.allMarkdownRemark.edges
 
-export default IndexPage;
+    return (
+      <Layout location={this.props.location} title={siteTitle}>
+        <SEO title="All posts" />
+        <Bio />
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <article key={node.fields.slug}>
+              <header>
+                <h3
+                  style={{
+                    marginBottom: rhythm(1 / 4),
+                  }}
+                >
+                  <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                    {title}
+                  </Link>
+                </h3>
+                <small>{node.frontmatter.date}</small>
+              </header>
+              <section>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.description || node.excerpt,
+                  }}
+                />
+              </section>
+            </article>
+          )
+        })}
+      </Layout>
+    )
+  }
+}
+
+export default BlogIndex
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`
