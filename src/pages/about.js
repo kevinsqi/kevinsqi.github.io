@@ -23,9 +23,6 @@ const About = () => (
             A few other topics I'm interested in are music and music software, machine learning
             applications, synthetic biology, and climate change prevention.
           </p>
-          <p>
-            You can reach me at <a href="mailto:iqnivek@gmail.com">iqnivek@gmail.com</a>
-          </p>
         </div>
       </div>
     </div>
