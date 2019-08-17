@@ -13,12 +13,11 @@ const About = () => (
           </p>
           <p>
             I love open source and React and have published a few React libraries to npm&mdash; a{' '}
-            <a href="https://github.com/kevinsqi/react-circular-progressbar">progress bar</a>
-            , <a href="https://github.com/patientslikeme/react-calendar-heatmap">heatmap</a>, and{' '}
-            <a href="https://github.com/kevinsqi/react-piano">piano</a>
-            . I also help out as a mentor at{' '}
-            <a href="https://nodeschool.io/sanfrancisco/">NodeSchool San Francisco</a>, which helps
-            people of all backgrounds learn Javascript.
+            <a href="https://github.com/kevinsqi/react-circular-progressbar">progress bar</a>,{' '}
+            <a href="https://github.com/patientslikeme/react-calendar-heatmap">heatmap</a>, and{' '}
+            <a href="https://github.com/kevinsqi/react-piano">piano</a>. I also help out as a mentor
+            at <a href="https://nodeschool.io/sanfrancisco/">NodeSchool San Francisco</a>, which
+            helps people of all backgrounds learn Javascript.
           </p>
           <p>
             A few other topics I'm interested in are music and music software, machine learning

@@ -19,7 +19,7 @@ class BlogPostTemplate extends React.Component {
         />
         <div className="row">
           <div className="col-12 col-md-8">
-            <article>
+            <article className="BlogPost">
               <header>
                 <h1>{post.frontmatter.title}</h1>
                 <p>{post.frontmatter.date}</p>
