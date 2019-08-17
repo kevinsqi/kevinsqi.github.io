@@ -15,7 +15,7 @@ class Blog extends React.Component {
       <Page title={siteTitle}>
         <SEO title="Blog" />
         <div className="row">
-          <div className="col-12 col-md-8">
+          <div className="col-12 col-md-7">
             <h2 className="font-weight-light text-secondary">Blog //</h2>
             <div>
               {posts.map(({ node }) => {
@@ -65,7 +65,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MMMM D, YYYY")
             title
             description
           }

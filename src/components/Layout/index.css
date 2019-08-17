@@ -139,3 +139,13 @@ a:hover {
   border-left-color: inherit;
   opacity: 0.8; 
 }
+
+.BlogPost h1,
+.BlogPost h2,
+.BlogPost h3 {
+  margin-top: 2rem;
+}
+
+.BlogPost iframe {
+  margin-top: 1rem;
+}

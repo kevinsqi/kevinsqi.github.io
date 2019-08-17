@@ -18,20 +18,20 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <div className="row">
-          <div className="col-12 col-md-8">
+          <div className="col-12 col-md-7">
             <article className="BlogPost">
               <header>
                 <h1>{post.frontmatter.title}</h1>
-                <p>{post.frontmatter.date}</p>
+                <p className="text-secondary small">{post.frontmatter.date}</p>
               </header>
               <section dangerouslySetInnerHTML={{ __html: post.html }} />
-              <hr />
-              <footer>
+              <hr className="mt-5" />
+              <footer className="mt-5">
                 <Bio />
               </footer>
             </article>
 
-            <nav>
+            <nav className="mt-5">
               <ul
                 style={{
                   display: `flex`,
@@ -80,7 +80,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM D, YYYY")
         description
       }
     }
