@@ -3,9 +3,11 @@ import { Link } from 'gatsby';
 import Projects from './Projects';
 import Nav from '../components/Nav';
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
 
 const IndexPage = () => (
   <Layout>
+    <SEO title="Home" />
     <div className="intro pt-4 pb-5">
       <Nav />
       <div className="container" style={{ marginTop: 150 }}>

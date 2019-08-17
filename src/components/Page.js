@@ -1,12 +1,12 @@
 import React from 'react';
-import Helmet from 'react-helmet';
 
 import Nav from './Nav';
 import Layout from '../components/Layout';
+import SEO from '../components/seo';
 
 const Page = ({ title, children }) => (
   <Layout>
-    <Helmet title={`${title} - Kevin Qi` || 'Kevin Qi'} />
+    <SEO title={title} />
 
     <div className="intro py-4">
       <Nav />
