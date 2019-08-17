@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 
-import Bio from '../components/Bio';
 import Page from '../components/Page';
-import SEO from '../components/seo';
+import SEO from '../components/SEO';
 
 class Blog extends React.Component {
   render() {

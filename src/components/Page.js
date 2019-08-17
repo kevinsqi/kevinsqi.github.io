@@ -2,7 +2,7 @@ import React from 'react';
 
 import Nav from './Nav';
 import Layout from '../components/Layout';
-import SEO from '../components/seo';
+import SEO from '../components/SEO';
 
 const Page = ({ title, children }) => (
   <Layout>

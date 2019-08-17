@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import Projects from './Projects';
 import Nav from '../components/Nav';
 import Layout from '../components/Layout';
