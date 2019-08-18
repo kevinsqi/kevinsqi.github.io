@@ -13,6 +13,7 @@ module.exports = {
         name: `blog`,
       },
     },
+    /*
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -20,6 +21,7 @@ module.exports = {
         name: `assets`,
       },
     },
+    */
     {
       resolve: `gatsby-transformer-remark`,
       options: {
