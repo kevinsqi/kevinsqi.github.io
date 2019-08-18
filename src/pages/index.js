@@ -7,7 +7,7 @@ import SEO from '../components/SEO';
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="intro pt-4 pb-5">
+    <div className="intro pt-5 pb-5">
       <Nav />
       <div className="container" style={{ marginTop: 150 }}>
         <div className="row">

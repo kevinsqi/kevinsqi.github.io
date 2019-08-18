@@ -8,7 +8,7 @@ const Page = ({ title, children }) => (
   <Layout>
     <SEO title={title} />
 
-    <div className="intro py-4">
+    <div className="intro py-5">
       <Nav />
     </div>
 
