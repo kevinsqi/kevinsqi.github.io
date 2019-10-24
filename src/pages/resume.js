@@ -26,7 +26,7 @@ const Resume = () => (
         <h2 className="ResumeHeader">Education</h2>
         <div className="mt-3 mb-5">
           <h3>Carnegie Mellon University</h3>
-          <p>B.S. in Computer Science, 2006-2009</p>
+          <p>B.S. in Computer Science, 3.86/4.0 GPA, 2006-2009</p>
         </div>
       </div>
 
@@ -76,7 +76,7 @@ function SummarySection(props) {
 function ExperienceSection(props) {
   return (
     <div className={props.className}>
-      <Job name="Amino" position="Senior software engineer" startDate="Jan 2017" endDate="present">
+      <Job name="Amino" position="Senior software engineer" startDate="Jan 2017" endDate="Sep 2019">
         <ul>
           <li>Lead engineer on the HSA banking product.</li>
         </ul>

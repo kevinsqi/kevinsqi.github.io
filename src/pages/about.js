@@ -8,8 +8,9 @@ const About = () => (
         <h2 className="font-weight-light text-secondary">About //</h2>
         <div className="mt-4 text-3">
           <p>
-            I'm currently a full-stack software engineer at <a href="https://amino.com/">Amino</a>,
-            helping make it easier for people to find affordable healthcare.
+            I was most recently a full-stack software engineer at{' '}
+            <a href="https://amino.com/">Amino</a>, helping make it easier for people to find
+            affordable healthcare.
           </p>
           <p>
             I love open source and React and have published a few React libraries to npm&mdash; a{' '}
@@ -20,8 +21,8 @@ const About = () => (
             helps people of all backgrounds learn Javascript.
           </p>
           <p>
-            A few other topics I'm interested in are music and music software, machine learning
-            applications, synthetic biology, and climate change prevention.
+            I'm also interested in music and music software, machine learning applications, and
+            climate change prevention and carbon removal.
           </p>
         </div>
       </div>
