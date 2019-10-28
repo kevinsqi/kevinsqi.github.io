@@ -74,11 +74,26 @@ function ExperienceSection(props) {
     <div className={props.className}>
       <Job name="Amino" position="Senior software engineer" startDate="Jan 2017" endDate="Sep 2019">
         <p>
-          Amino analyzes insurance claims data and built a search tool to find affordable doctors
-          and hospitals. Stack: React, Python, Flask, Postgres.
+          Amino builds a search tool to find affordable doctors and hospitals by analyzing insurance
+          claims data. Stack: React, Python, Flask, Postgres.
         </p>
         <ul>
-          <li>Lead engineer on the HSA banking product.</li>
+          <li>
+            Lead engineer on the HSA banking product built on top of a third-party API provider. Did
+            product management, worked closely with API provider, wrote proposals to get team
+            buy-in, and helped mentor the HSA team.
+          </li>
+          <li>
+            For HSA, designed and built the transaction reconciliation system, payroll system,
+            banking DB schema, ACH transfers, and role-based permissions system. Helped build batch
+            file processing system, enrollment processing, and admin tooling to support operations
+            like reversals and rollovers.
+          </li>
+          <li>
+            Helped guide and build a scalable design system based on composable CSS utility classes.
+            Made frontend more maintainable by improving redux patterns and adopting standard
+            libraries like Formik to replace homegrown components.
+          </li>
         </ul>
       </Job>
       <Job
