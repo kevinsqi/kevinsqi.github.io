@@ -142,29 +142,29 @@ function ProjectsSection(props) {
     <div className={props.className}>
       <h3>react-circular-progressbar</h3>
       <p>
-        <a className="text-muted" href={PROJECTS.react_circular_progressbar.github}>
+        {PROJECTS.react_circular_progressbar.description}
+        <br />
+        <a className="small text-muted" href={PROJECTS.react_circular_progressbar.github}>
           {PROJECTS.react_circular_progressbar.github}
         </a>
-        <br />
-        {PROJECTS.react_circular_progressbar.description}
       </p>
 
       <h3>react-calendar-heatmap</h3>
       <p>
-        <a className="text-muted" href={PROJECTS.react_calendar_heatmap.github}>
+        {PROJECTS.react_calendar_heatmap.description}
+        <br />
+        <a className="small text-muted" href={PROJECTS.react_calendar_heatmap.github}>
           {PROJECTS.react_calendar_heatmap.github}
         </a>
-        <br />
-        {PROJECTS.react_calendar_heatmap.description}
       </p>
 
       <h3>react-piano</h3>
       <p>
-        <a className="text-muted" href={PROJECTS.react_piano.github}>
+        {PROJECTS.react_piano.description}
+        <br />
+        <a className="small text-muted" href={PROJECTS.react_piano.github}>
           {PROJECTS.react_piano.github}
         </a>
-        <br />
-        {PROJECTS.react_piano.description}
       </p>
     </div>
   );
@@ -188,17 +188,19 @@ function ContactSection({ className, email, github, website }) {
   );
 }
 
-const Job = ({ name, position, startDate, endDate, children }) => (
-  <div>
-    <h3>{name}</h3>
-    <p className="text-muted">
-      {position ? `${position}, ` : null}
-      {startDate}
-      {endDate ? `–${endDate}` : null}
-    </p>
+function Job({ name, position, startDate, endDate, children }) {
+  return (
+    <div>
+      <h3>{name}</h3>
+      <p className="small text-muted">
+        {position ? `${position}, ` : null}
+        {startDate}
+        {endDate ? `–${endDate}` : null}
+      </p>
 
-    {children}
-  </div>
-);
+      {children}
+    </div>
+  );
+}
 
 export default Resume;
