@@ -4,9 +4,9 @@ import { PROJECTS } from '../../data';
 import img_react_piano from './react_piano.png';
 import img_react_circular_progressbar from './react_circular_progressbar.png';
 import img_react_calendar_heatmap from './react_calendar_heatmap.png';
-import img_save_tabbed_images from './save_tabbed_images.png';
-import img_patientslikeme_app from './patientslikeme_app.png';
+import img_save_tabbed_images from './save_tabbed_images.jpg';
 import img_eventmapper from './eventmapper.jpg';
+import img_microharmonic from './microharmonic.png';
 
 const Projects = () => {
   return (
@@ -41,6 +41,17 @@ const Projects = () => {
         </Project>
 
         <Project
+          name="microharmonic"
+          image={img_microharmonic}
+          links={[
+            { text: 'View project on Github', url: PROJECTS.microharmonic.github },
+            { text: 'View the app', url: 'https://www.microharmonic.com' },
+          ]}
+        >
+          {PROJECTS.microharmonic.description}
+        </Project>
+
+        <Project
           name="Save Tabbed Images"
           image={img_save_tabbed_images}
           links={[
@@ -57,14 +68,6 @@ const Projects = () => {
 
         <Project name="EventMapper" image={img_eventmapper} links={[]}>
           {PROJECTS.eventmapper.description}
-        </Project>
-
-        <Project
-          name="PatientsLikeMe App Treatment Reports"
-          image={img_patientslikeme_app}
-          links={[{ text: 'View in app store', url: PROJECTS.patientslikeme_app.website }]}
-        >
-          {PROJECTS.patientslikeme_app.description}
         </Project>
       </section>
     </div>
@@ -90,8 +93,8 @@ const Project = ({ name, image, url, links, children }) => {
 
         <ul className="list-unstyled mt-3">
           {links.map(({ text, url }) => (
-            <li key={url}>
-              <a href={url}>{text}</a>
+            <li className="mt-1" key={url}>
+              <a href={url}>{text} →</a>
             </li>
           ))}
         </ul>

@@ -21,8 +21,8 @@ const About = () => (
             helps people of all backgrounds learn Javascript.
           </p>
           <p>
-            I'm also interested in music and music software, machine learning applications, and
-            climate change prevention and carbon removal.
+            I'm also interested in music and music software, machine learning, and climate change
+            prevention and carbon removal.
           </p>
         </div>
       </div>
