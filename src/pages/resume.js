@@ -85,17 +85,18 @@ function ExperienceSection(props) {
       >
         <ul>
           <li>
-            Built React frontend for general-purpose patient interview framework, and wrote dozens
+            Built React frontend for a general-purpose patient interview framework, and wrote dozens
             of other React components.
           </li>
           <li>
-            Helped introduce technologies and best practices, including React/ES6/webpack and
-            javascript testing. Gave presentations on GraphQL, ES6 best practices, and React.
+            Helped introduce React and usage of ES6, webpack and javascript testing. Gave
+            presentations on GraphQL, ES6 best practices, and React.
           </li>
           <li>
             Open-sourced two react components,{' '}
             <a href={PROJECTS.react_calendar_heatmap.github}>react-calendar-heatmap</a> and{' '}
-            <a href={PROJECTS.react_circular_progressbar.github}>react-circular-progressbar</a>.
+            <a href={PROJECTS.react_circular_progressbar.github}>react-circular-progressbar</a>, as
+            part of a health tracking project.
           </li>
           <li>
             Quickly learned and handled development on{' '}
@@ -108,9 +109,8 @@ function ExperienceSection(props) {
       <Job name="Panjiva" position="Software engineer" startDate="May 2011" endDate="Apr 2014">
         <ul>
           <li>
-            Revamped a shipment search interface with sophisticated refinements and filtering, and
-            built an interface to visualize Chinese trade data. Worked on numerous projects on
-            homepage, search, subscription flows, and user dashboard. Improved conversion rate of
+            Built an interface to visualize Chinese trade data. Worked on numerous projects on
+            homepage, search, subscription flows, and user dashboard. Improved conversion rate on
             high-traffic public company profiles.
           </li>
           <li>
