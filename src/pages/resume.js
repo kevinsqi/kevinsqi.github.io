@@ -59,16 +59,12 @@ function SummarySection(props) {
   return (
     <div className={props.className}>
       <p>
-        I'm a full-stack software engineer with 8 years of experience working at web startups. I
-        write readable, well-documented and tested code&mdash;while still iterating quickly. I
-        believe in being involved with a product holistically, including working on specs, metrics,
-        and product impact. I try to make a strong team impact by introducing scalable design
-        systems and reusable components. I also enjoy writing open source projects.
+        I'm a software engineer with 9 years of experience working at web startups. I write
+        readable, well-documented and well-tested code while iterating quickly. I'm able to
+        contribute holistically to build a great product&mdash;writing specs, doing design, and
+        evaluating metrics. I've also built a few open source projects which I currently maintain.
       </p>
-      <p>
-        I'm interested in working at companies with driven teams where I can help build interesting,
-        impactful products.
-      </p>
+      <p>I'm looking to work with driven teams to build impactful products.</p>
     </div>
   );
 }
