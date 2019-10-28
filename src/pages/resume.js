@@ -73,6 +73,10 @@ function ExperienceSection(props) {
   return (
     <div className={props.className}>
       <Job name="Amino" position="Senior software engineer" startDate="Jan 2017" endDate="Sep 2019">
+        <p>
+          Amino analyzes insurance claims data and built a search tool to find affordable doctors
+          and hospitals. Stack: React, Python, Flask, Postgres.
+        </p>
         <ul>
           <li>Lead engineer on the HSA banking product.</li>
         </ul>
@@ -83,6 +87,11 @@ function ExperienceSection(props) {
         startDate="Dec 2014"
         endDate="Aug 2016"
       >
+        <p>
+          PatientsLikeMe helps people with rare diseases find each other. They also analyze
+          user-contributed condition and treatment data to publish research studies. Stack: React,
+          Ruby on Rails, Postgres, Swift.
+        </p>
         <ul>
           <li>
             Built React frontend for a general-purpose patient interview framework, and wrote dozens
@@ -107,6 +116,10 @@ function ExperienceSection(props) {
       </Job>
 
       <Job name="Panjiva" position="Software engineer" startDate="May 2011" endDate="Apr 2014">
+        <p>
+          Panjiva builds search and company profiles on top of raw shipment data and other sources,
+          to help users find reliable global suppliers. Stack: Ruby on Rails, Postgres.
+        </p>
         <ul>
           <li>
             Built an interface to visualize Chinese trade data. Worked on numerous projects on
