@@ -74,8 +74,8 @@ function ExperienceSection(props) {
     <div className={props.className}>
       <Job name="Amino" position="Senior software engineer" startDate="Jan 2017" endDate="Sep 2019">
         <p>
-          Amino builds a search tool to find affordable doctors and hospitals by analyzing insurance
-          claims data. Stack: React, Python, Flask, Postgres.
+          Amino provides a search tool to help people to find affordable doctors and hospitals,
+          powered by analyzed insurance claims data. Stack: React, Python, Flask, Postgres, Docker.
         </p>
         <ul>
           <li>
@@ -103,9 +103,8 @@ function ExperienceSection(props) {
         endDate="Aug 2016"
       >
         <p>
-          PatientsLikeMe helps people with rare diseases find each other. They also analyze
-          user-contributed condition and treatment data to publish research studies. Stack: React,
-          Ruby on Rails, Postgres, Swift.
+          PatientsLikeMe helps people with rare diseases by analyzing their condition and treatment
+          data and using it to drive research. Stack: React, Ruby on Rails, Postgres, Swift.
         </p>
         <ul>
           <li>
@@ -149,7 +148,7 @@ function ExperienceSection(props) {
       </Job>
 
       <Job
-        name="Lockheed Martin"
+        name="Lockheed Martin (Simulation & Training)"
         position="Software engineer"
         startDate="Jan 2010"
         endDate="May 2011"

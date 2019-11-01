@@ -8,7 +8,7 @@ Install gatsby and run:
 
 ```
 yarn install
-gatsby develop
+yarn start
 ```
 
 The server will be running on `localhost:8000`.
