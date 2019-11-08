@@ -52,7 +52,8 @@ h3 {
 }
 
 a {
-  color: #3e98c7;
+  color: #212529;
+  text-decoration: underline;
 }
 
 a:hover {
@@ -71,6 +72,10 @@ a:hover {
   min-height: 100vh;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
 /* Nav */
 
 .Nav {
@@ -80,6 +85,8 @@ a:hover {
 }
 
 .NavLink {
+  color: #3e98c7;
+  text-decoration: none;
   margin-right: 1.6rem;
 }
 

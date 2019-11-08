@@ -33,4 +33,10 @@ export const PROJECTS = {
     description:
       'Treatment report functionality on native PatientsLikeMe iOS app, with useful info on cost, effectiveness, side effects, and patient evaluations. Built with Swift.',
   },
+  climatefuture: {
+    website: 'https://www.climatefuture.io',
+    github: 'https://github.com/kevinsqi/climatefuture',
+    description:
+      'A web app that shows you the projected impacts of climate change where you live, based on a collection of public data sources. Originated at Science Hack Day 2019. Built with React, NextJS, Postgres/PostGIS, and Docker.',
+  },
 };
