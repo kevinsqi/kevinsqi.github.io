@@ -20,12 +20,12 @@ const Nav = (props) => (
         <Link to="/resume" className="NavLink display-font" activeClassName="NavLink--active" exact>
           Resume
         </Link>
-        <a className="NavLink display-font" href="https://github.com/kevinsqi">
-          Github
-        </a>
         <Link to="/blog" className="NavLink display-font" activeClassName="NavLink--active" exact>
           Blog
         </Link>
+        <a className="NavLink display-font" href="https://github.com/kevinsqi">
+          Github
+        </a>
       </div>
     </div>
   </nav>
