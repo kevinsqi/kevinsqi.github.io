@@ -1,6 +1,7 @@
 import React from 'react';
-import { PROJECTS } from '../../data';
+import { MdFileDownload, MdStar } from 'react-icons/md';
 
+import { PROJECTS } from '../../data';
 import img_react_piano from './react_piano.png';
 import img_react_circular_progressbar from './react_circular_progressbar.png';
 import img_react_calendar_heatmap from './react_calendar_heatmap.png';
@@ -34,6 +35,18 @@ function Projects({ className }) {
         <Project
           name="react-circular-progressbar"
           image={img_react_circular_progressbar}
+          badges={[
+            {
+              text: PROJECTS.react_circular_progressbar.github_stars.toLocaleString(),
+              url: PROJECTS.react_circular_progressbar.github,
+              IconComponent: MdStar,
+            },
+            {
+              text: PROJECTS.react_circular_progressbar.downloads_total.toLocaleString(),
+              url: PROJECTS.react_circular_progressbar.npm,
+              IconComponent: MdFileDownload,
+            },
+          ]}
           links={[{ text: 'Github source', url: PROJECTS.react_circular_progressbar.github }]}
         >
           {PROJECTS.react_circular_progressbar.description}
@@ -42,6 +55,18 @@ function Projects({ className }) {
         <Project
           name="react-calendar-heatmap"
           image={img_react_calendar_heatmap}
+          badges={[
+            {
+              text: PROJECTS.react_calendar_heatmap.github_stars.toLocaleString(),
+              url: PROJECTS.react_calendar_heatmap.github,
+              IconComponent: MdStar,
+            },
+            {
+              text: PROJECTS.react_calendar_heatmap.downloads_total.toLocaleString(),
+              url: PROJECTS.react_calendar_heatmap.npm,
+              IconComponent: MdFileDownload,
+            },
+          ]}
           links={[{ text: 'Github source', url: PROJECTS.react_calendar_heatmap.github }]}
         >
           {PROJECTS.react_calendar_heatmap.description}
@@ -85,7 +110,7 @@ function Projects({ className }) {
   );
 }
 
-const Project = ({ name, image, url, links, children }) => {
+const Project = ({ name, image, url, badges, links, children }) => {
   const primaryLink = links[0];
   const img = (
     <img className="img-fluid rounded mb-3" src={image} alt={`${name} project screenshot`} />
@@ -109,6 +134,19 @@ const Project = ({ name, image, url, links, children }) => {
           )}
         </h3>
         <div className="mt-2">{children}</div>
+
+        {badges && (
+          <ul className="list-unstyled mt-3">
+            {badges.map(({ text, url, IconComponent }) => (
+              <li className="mr-3 d-inline-block" key={url}>
+                <a href={url}>
+                  <IconComponent className="d-inline-block align-middle" />
+                  <span className="d-inline-block align-middle ml-1">{text}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        )}
 
         <ul className="list-unstyled mt-3">
           {links.map(({ text, url }) => (

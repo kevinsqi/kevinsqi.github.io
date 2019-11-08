@@ -1,4 +1,6 @@
 import React from 'react';
+import { MdFileDownload, MdStar } from 'react-icons/md';
+
 import Page from '../components/Page';
 import { PROJECTS } from '../data';
 
@@ -167,32 +169,44 @@ function ExperienceSection(props) {
 function ProjectsSection(props) {
   return (
     <div className={props.className}>
-      <h3>react-circular-progressbar</h3>
-      <p>
-        {PROJECTS.react_circular_progressbar.description}
-        <br />
-        <a className="small text-muted" href={PROJECTS.react_circular_progressbar.github}>
-          {PROJECTS.react_circular_progressbar.github}
-        </a>
-      </p>
+      <Project project={PROJECTS.react_circular_progressbar} />
+      <Project project={PROJECTS.react_calendar_heatmap} />
+      <Project project={PROJECTS.react_piano} />
+    </div>
+  );
+}
 
-      <h3>react-calendar-heatmap</h3>
-      <p>
-        {PROJECTS.react_calendar_heatmap.description}
-        <br />
-        <a className="small text-muted" href={PROJECTS.react_calendar_heatmap.github}>
-          {PROJECTS.react_calendar_heatmap.github}
-        </a>
-      </p>
+function Project({ project }) {
+  const { name, npm, github, github_stars, downloads_total, description } = project;
+  const badges = [
+    github_stars && {
+      text: github_stars.toLocaleString(),
+      url: github,
+      IconComponent: MdStar,
+    },
+    downloads_total && {
+      text: downloads_total.toLocaleString(),
+      url: npm,
+      IconComponent: MdFileDownload,
+    },
+  ].filter((badge) => badge);
 
-      <h3>react-piano</h3>
-      <p>
-        {PROJECTS.react_piano.description}
-        <br />
-        <a className="small text-muted" href={PROJECTS.react_piano.github}>
-          {PROJECTS.react_piano.github}
-        </a>
-      </p>
+  return (
+    <div>
+      <h3>{name}</h3>
+      <p className="mb-0">{description}</p>
+      {badges.length > 0 && (
+        <ul className="list-unstyled mt-1">
+          {badges.map(({ text, url, IconComponent }) => (
+            <li className="mr-3 d-inline-block" key={url}>
+              <a href={url}>
+                <IconComponent className="d-inline-block align-middle" />
+                <span className="d-inline-block align-middle ml-1">{text}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }

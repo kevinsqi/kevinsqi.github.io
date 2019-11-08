@@ -1,18 +1,27 @@
 export const PROJECTS = {
   react_piano: {
+    name: 'react-piano',
     github: 'https://github.com/kevinsqi/react-piano',
     description:
       'An open source interactive piano component which supports custom sounds, touch/click/keyboard events, programmatic playback, and fully configurable styling. Published on npm.',
   },
   react_circular_progressbar: {
+    name: 'react-circular-progressbar',
+    npm: 'https://www.npmjs.com/package/react-circular-progressbar',
     github: 'https://github.com/kevinsqi/react-circular-progressbar',
+    github_stars: 509,
+    downloads_total: 2318933,
     description:
-      "An open source circular progressbar for React, written in Typescript and extensively customizable. It's published on npm with over 50,000 weekly downloads and has 500+ stars on Github.",
+      'An open source circular progressbar for React, written in Typescript and extensively customizable. Built with React and SVG.',
   },
   react_calendar_heatmap: {
+    name: 'react-calendar-heatmap',
+    npm: 'https://www.npmjs.com/package/react-calendar-heatmap',
     github: 'https://github.com/kevinsqi/react-calendar-heatmap',
+    github_stars: 584,
+    downloads_total: 227953,
     description:
-      "An open source calendar heatmap inspired by Github's contribution graph. It's published on npm and has 500+ stars on Github. Built with React and SVG.",
+      "An open source calendar heatmap inspired by Github's contribution graph. Built with React and SVG.",
   },
   microharmonic: {
     github: 'https://github.com/kevinsqi/microharmonic',
