@@ -4,16 +4,17 @@ import Nav from './Nav';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 
-const Page = ({ title, children }) => (
+const Page = ({ title, children, columnClassName }) => (
   <Layout>
     <SEO title={title} />
+    <div className="container py-5">
+      <div className="row">
+        <div className={columnClassName || 'col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2'}>
+          <Nav />
 
-    <div className="intro py-5">
-      <Nav />
-    </div>
-
-    <div className="container">
-      <div className="pt-5">{children}</div>
+          <div style={{ marginTop: 60 }}>{children}</div>
+        </div>
+      </div>
     </div>
   </Layout>
 );

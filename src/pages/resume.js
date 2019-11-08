@@ -3,17 +3,17 @@ import Page from '../components/Page';
 import { PROJECTS } from '../data';
 
 const Resume = () => (
-  <Page title="Resume">
-    <div className="alert alert-secondary mb-5 hide-for-printing">
+  <Page title="Resume" columnClassName="col-12">
+    <div className="text-secondary small alert alert-secondary mb-4 hide-for-printing">
       To save this as a PDF, open the Print dialog and select "Save as PDF".
     </div>
 
     <div className="row">
-      <div className="col-12 col-12 mb-3">
-        <h1>Resume - Kevin Qi</h1>
+      <div className="col-12 mb-3">
+        <h1 className="h3">Resume - Kevin Qi</h1>
       </div>
 
-      <div className="col-12 col-sm-8">
+      <div className="col-12 col-md-8">
         <h2 className="ResumeHeader">Summary</h2>
         <SummarySection className="mt-3 mb-5" />
 
@@ -30,7 +30,7 @@ const Resume = () => (
         </div>
       </div>
 
-      <div className="col-xs-12 col-sm-4">
+      <div className="col-12 col-md-4">
         <h2 className="ResumeHeader">Contact</h2>
         <ContactSection
           className="mt-3 mb-5"
