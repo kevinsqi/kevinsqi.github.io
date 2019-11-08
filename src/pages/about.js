@@ -4,8 +4,8 @@ import Page from '../components/Page';
 const About = () => (
   <Page title="About">
     <div className="row">
-      <div className="col-xs-12 col-md-7">
-        <h2 className="font-weight-light text-secondary">About //</h2>
+      <div className="col-12 col-md-10">
+        <h2 className="h3 text-secondary">About</h2>
         <div className="mt-4 text-3">
           <p>
             I was most recently a full-stack software engineer at{' '}

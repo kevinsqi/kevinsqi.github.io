@@ -44,8 +44,8 @@ function Projects({ className }) {
           name="microharmonic"
           image={img_microharmonic}
           links={[
-            { text: 'View project on Github', url: PROJECTS.microharmonic.github },
             { text: 'View the app', url: 'https://www.microharmonic.com' },
+            { text: 'View project on Github', url: PROJECTS.microharmonic.github },
           ]}
         >
           {PROJECTS.microharmonic.description}

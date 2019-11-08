@@ -14,8 +14,8 @@ class Blog extends React.Component {
       <Page title={siteTitle}>
         <SEO title="Blog" />
         <div className="row">
-          <div className="col-12 col-md-7">
-            <h2 className="font-weight-light text-secondary">Blog //</h2>
+          <div className="col-12">
+            <h2 className="h3 text-secondary">Blog</h2>
             <div>
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug;

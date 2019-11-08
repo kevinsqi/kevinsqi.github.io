@@ -71,15 +71,6 @@ a:hover {
   min-height: 100vh;
 }
 
-/* Custom */
-
-.intro {
-  background: #3e98c7;
-  background: url(./background.jpg);
-  background-size: cover;
-  color: #fff;
-}
-
 /* Nav */
 
 .Nav {
@@ -96,11 +87,8 @@ a:hover {
   margin-right: 0;
 }
 
-.NavLink:hover {
-}
-
 .NavLink--active {
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #3e98c7;
 }
 
 /* Resume */

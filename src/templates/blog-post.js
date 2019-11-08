@@ -18,7 +18,7 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <div className="row">
-          <div className="col-12 col-md-7">
+          <div className="col-12">
             <article className="BlogPost">
               <header>
                 <h1>{post.frontmatter.title}</h1>
