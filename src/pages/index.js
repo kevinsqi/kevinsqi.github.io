@@ -1,9 +1,6 @@
 import React from 'react';
 import Projects from './Projects';
-import Nav from '../components/Nav';
-import Layout from '../components/Layout';
 import Page from '../components/Page';
-import SEO from '../components/SEO';
 
 const IndexPage = () => (
   <Page title="Home">

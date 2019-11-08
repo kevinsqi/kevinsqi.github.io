@@ -1,5 +1,7 @@
 import React from 'react';
+
 import Page from '../components/Page';
+import { PROJECTS } from '../data';
 
 const About = () => (
   <Page title="About">
@@ -13,16 +15,17 @@ const About = () => (
             affordable healthcare.
           </p>
           <p>
-            I love open source and React and have published a few React libraries to npm&mdash; a{' '}
-            <a href="https://github.com/kevinsqi/react-circular-progressbar">progress bar</a>,{' '}
-            <a href="https://github.com/patientslikeme/react-calendar-heatmap">heatmap</a>, and{' '}
-            <a href="https://github.com/kevinsqi/react-piano">piano</a>. I also help out as a mentor
-            at <a href="https://nodeschool.io/sanfrancisco/">NodeSchool San Francisco</a>, which
-            helps people of all backgrounds learn Javascript.
+            I'm passionate about building intuitive interfaces. I've published a few React libraries
+            to npm&mdash; a <a href={PROJECTS.react_circular_progressbar.github}>progress bar</a>,{' '}
+            <a href={PROJECTS.react_calendar_heatmap.github}>heatmap</a>, and{' '}
+            <a href={PROJECTS.react_piano.github}>piano</a>. I also help out as a mentor at{' '}
+            <a href="https://nodeschool.io/sanfrancisco/">NodeSchool San Francisco</a>, which helps
+            people of all backgrounds learn Javascript.
           </p>
           <p>
-            I'm also interested in music and music software, machine learning, and climate change
-            prevention and carbon removal.
+            I'm also interested in music, machine learning, and climate change prevention. My most
+            recent project, <a href={PROJECTS.climatefuture.website}>ClimateFuture</a>, shows people
+            the future impact of climate change where they live.
           </p>
         </div>
       </div>
