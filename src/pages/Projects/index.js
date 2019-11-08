@@ -8,12 +8,12 @@ import img_save_tabbed_images from './save_tabbed_images.jpg';
 import img_eventmapper from './eventmapper.jpg';
 import img_microharmonic from './microharmonic.png';
 
-const Projects = () => {
+function Projects({ className }) {
   return (
-    <div>
-      <h2 className="font-weight-light text-secondary">Projects //</h2>
+    <div className={className}>
+      <h2 className="h3 text-secondary">Projects</h2>
 
-      <section className="mt-5">
+      <section className="mt-4">
         <Project
           name="react-circular-progressbar"
           image={img_react_circular_progressbar}
@@ -65,14 +65,10 @@ const Projects = () => {
         >
           {PROJECTS.save_tabbed_images.description}
         </Project>
-
-        <Project name="EventMapper" image={img_eventmapper} links={[]}>
-          {PROJECTS.eventmapper.description}
-        </Project>
       </section>
     </div>
   );
-};
+}
 
 const Project = ({ name, image, url, links, children }) => {
   const primaryLink = links[0];
@@ -82,12 +78,12 @@ const Project = ({ name, image, url, links, children }) => {
 
   return (
     <div className="row mb-5">
-      <div className="col-xs-12 col-sm-6">
+      <div className="col-xs-12 col-sm-5 col-md-4">
         <div className="text-xs-center">
           {primaryLink ? <a href={primaryLink.url}>{img}</a> : img}
         </div>
       </div>
-      <div className="col-xs-12 col-sm-6">
+      <div className="col-xs-12 col-sm-7 col-md-8">
         <h3>{primaryLink ? <a href={primaryLink.url}>{name}</a> : name}</h3>
         <div className="mt-2">{children}</div>
 

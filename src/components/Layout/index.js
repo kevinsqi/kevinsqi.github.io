@@ -5,6 +5,6 @@ import 'typeface-work-sans';
 import './bootstrap.min.css';
 import './index.css';
 
-const Layout = ({ children }) => <div>{children}</div>;
+const Layout = ({ children }) => <div className="bg-cream min-height-100vh">{children}</div>;
 
 export default Layout;
