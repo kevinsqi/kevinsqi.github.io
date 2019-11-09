@@ -133,8 +133,9 @@ function ExperienceSection(props) {
 
       <Job name="Panjiva" position="Software engineer" startDate="May 2011" endDate="Apr 2014">
         <p>
-          Panjiva builds search and company profiles on top of raw shipment data and other sources,
-          to help users find reliable global suppliers. Stack: Ruby on Rails, Postgres.
+          Panjiva makes global trade data searchable and understandable by building search and
+          company profiles on top of raw shipment data and other sources. Stack: Ruby on Rails,
+          Postgres.
         </p>
         <ul>
           <li>
