@@ -9,7 +9,7 @@ export const PROJECTS = {
     name: 'react-circular-progressbar',
     npm: 'https://www.npmjs.com/package/react-circular-progressbar',
     github: 'https://github.com/kevinsqi/react-circular-progressbar',
-    github_stars: 509,
+    github_stars: 528,
     downloads_total: 2318933,
     description:
       'An open source circular progressbar for React, written in Typescript and extensively customizable. Built with React and SVG.',
@@ -18,7 +18,7 @@ export const PROJECTS = {
     name: 'react-calendar-heatmap',
     npm: 'https://www.npmjs.com/package/react-calendar-heatmap',
     github: 'https://github.com/kevinsqi/react-calendar-heatmap',
-    github_stars: 584,
+    github_stars: 620,
     downloads_total: 227953,
     description:
       "An open source calendar heatmap inspired by Github's contribution graph. Built with React and SVG.",
