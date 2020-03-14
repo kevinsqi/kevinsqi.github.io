@@ -61,12 +61,12 @@ function SummarySection(props) {
   return (
     <div className={props.className}>
       <p>
-        I'm a software engineer with 9 years of experience working at web startups. I write
-        readable, well-documented and well-tested code while iterating quickly. I'm able to
-        contribute holistically to build a great product&mdash;writing specs, doing design, and
-        evaluating metrics. I've also built a few open source projects which I currently maintain.
+        I'm a software engineer experienced with web startups. I write readable, well-documented and
+        well-tested code while iterating quickly. I'm able to contribute holistically to build a
+        great product&mdash;writing specs, doing design, and evaluating metrics. I've also built a
+        few open source projects which I currently maintain. I'm looking to work with driven teams
+        to build impactful products.
       </p>
-      <p>I'm looking to work with driven teams to build impactful products.</p>
     </div>
   );
 }
@@ -74,6 +74,12 @@ function SummarySection(props) {
 function ExperienceSection(props) {
   return (
     <div className={props.className}>
+      <Job
+        name="Samsara"
+        position="Senior software engineer"
+        startDate="Feb 2020"
+        endDate="present"
+      />
       <Job name="Amino" position="Senior software engineer" startDate="Jan 2017" endDate="Sep 2019">
         <p>
           Amino provides a search tool to help people to find affordable doctors and hospitals,

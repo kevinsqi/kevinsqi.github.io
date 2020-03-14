@@ -10,9 +10,8 @@ const About = () => (
         <h2 className="h3 text-secondary">About</h2>
         <div className="mt-4 text-3">
           <p>
-            I was most recently a full-stack software engineer at{' '}
-            <a href="https://amino.com/">Amino</a>, helping make it easier for people to find
-            affordable healthcare.
+            I'm currently a software engineer at <a href="https://www.samsara.com/">Samsara</a>,
+            helping make vehicles and drivers safer and more efficient.
           </p>
           <p>
             I'm passionate about building intuitive interfaces. I've published a few React libraries
