@@ -7,6 +7,7 @@ import img_react_circular_progressbar from './react_circular_progressbar.png';
 import img_react_calendar_heatmap from './react_calendar_heatmap.png';
 import img_microharmonic from './microharmonic.png';
 import img_climatefuture from './climatefuture.png';
+import img_pianohub from './pianohub.png';
 
 function Projects({ className }) {
   return (
@@ -14,6 +15,18 @@ function Projects({ className }) {
       <h2 className="h3 text-secondary">Projects</h2>
 
       <section className="mt-4">
+        <Project
+          name="PianoHub"
+          image={img_pianohub}
+          links={[
+            {
+              text: 'Visit site',
+              url: PROJECTS.pianohub.website,
+            },
+          ]}
+        >
+          {PROJECTS.pianohub.description}
+        </Project>
         <Project
           name="ClimateFuture"
           image={img_climatefuture}

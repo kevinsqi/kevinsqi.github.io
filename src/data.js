@@ -48,4 +48,9 @@ export const PROJECTS = {
     description:
       'A web app that shows you the projected impacts of climate change where you live, based on a collection of public data sources. Originated at Science Hack Day 2019. Built with React, NextJS, Postgres/PostGIS, and Docker.',
   },
+  pianohub: {
+    website: 'https://www.pianohub.io',
+    description:
+      'Like codepen.io for songs. Easily create and share music using a piano roll interface. Built with React, NodeJS, Postgres, and Docker.',
+  },
 };
