@@ -5,7 +5,6 @@ import { PROJECTS } from '../../data';
 import img_react_piano from './react_piano.png';
 import img_react_circular_progressbar from './react_circular_progressbar.png';
 import img_react_calendar_heatmap from './react_calendar_heatmap.png';
-import img_save_tabbed_images from './save_tabbed_images.jpg';
 import img_microharmonic from './microharmonic.png';
 import img_climatefuture from './climatefuture.png';
 
@@ -89,21 +88,6 @@ function Projects({ className }) {
           ]}
         >
           {PROJECTS.microharmonic.description}
-        </Project>
-
-        <Project
-          name="Save Tabbed Images"
-          image={img_save_tabbed_images}
-          links={[
-            { text: 'Github source', url: PROJECTS.save_tabbed_images.github },
-            {
-              text: 'View in Chrome web store',
-              url:
-                'https://chrome.google.com/webstore/detail/save-tabbed-images/hhcoikfhkkadkgklepjkfgafmjoggefh',
-            },
-          ]}
-        >
-          {PROJECTS.save_tabbed_images.description}
         </Project>
       </section>
     </div>
