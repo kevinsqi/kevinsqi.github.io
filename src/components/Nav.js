@@ -17,9 +17,9 @@ const Nav = (props) => (
         <Link to="/about" className="NavLink display-font" activeClassName="NavLink--active" exact>
           About
         </Link>
-        <Link to="/resume" className="NavLink display-font" activeClassName="NavLink--active" exact>
+        <a href={'/assets/resume/resume_kevin_qi.pdf'} className="NavLink display-font">
           Resume
-        </Link>
+        </a>
         <Link to="/blog" className="NavLink display-font" activeClassName="NavLink--active" exact>
           Blog
         </Link>
