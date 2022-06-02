@@ -6,9 +6,9 @@ const IndexPage = () => (
   <Page title="Home">
     <div className="h2 font-weight-bold">Kevin Qi</div>
     <p className="text-2">
-      Developer and open source contributor.
+      Software engineer at Gridmatic.
       <br />
-      Based in San Francisco.
+      Based in the SF Bay Area.
     </p>
     <hr className="mt-5" />
     <Projects className="mt-5" />
