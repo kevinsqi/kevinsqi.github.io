@@ -14,15 +14,17 @@ const Nav = (props) => (
         <Link to="/" className="NavLink display-font" activeClassName="NavLink--active" exact>
           Home
         </Link>
-        <Link to="/about" className="NavLink display-font" activeClassName="NavLink--active" exact>
-          About
-        </Link>
-        <a href={'/assets/resume/resume_kevin_qi.pdf'} className="NavLink display-font">
-          Resume
-        </a>
+        {/*
+          <a href={'/assets/resume/resume_kevin_qi.pdf'} className="NavLink display-font">
+            Resume
+          </a>
+          */}
         <Link to="/blog" className="NavLink display-font" activeClassName="NavLink--active" exact>
           Blog
         </Link>
+        <a href="https://www.linkedin.com/in/kevin-qi-25b76710/" className="NavLink display-font">
+          LinkedIn
+        </a>
         <a className="NavLink display-font" href="https://github.com/kevinsqi">
           Github
         </a>

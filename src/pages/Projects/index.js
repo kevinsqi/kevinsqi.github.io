@@ -13,6 +13,10 @@ function Projects({ className }) {
   return (
     <div className={className}>
       <h2 className="h3">Projects</h2>
+      <p className="text-3 mt-3">
+        I've published a few React libraries to npm, and have side projects relating to music and
+        climate.
+      </p>
 
       <section className="mt-5">
         <Project
@@ -27,23 +31,6 @@ function Projects({ className }) {
         >
           {PROJECTS.pianohub.description}
         </Project>
-        <Project
-          name="ClimateFuture"
-          image={img_climatefuture}
-          links={[
-            {
-              text: 'Visit site',
-              url: PROJECTS.climatefuture.website,
-            },
-            {
-              text: 'Github source',
-              url: PROJECTS.climatefuture.github,
-            },
-          ]}
-        >
-          {PROJECTS.climatefuture.description}
-        </Project>
-
         <Project
           name="react-circular-progressbar"
           image={img_react_circular_progressbar}
@@ -82,6 +69,23 @@ function Projects({ className }) {
           links={[{ text: 'Github source', url: PROJECTS.react_calendar_heatmap.github }]}
         >
           {PROJECTS.react_calendar_heatmap.description}
+        </Project>
+
+        <Project
+          name="ClimateFuture"
+          image={img_climatefuture}
+          links={[
+            {
+              text: 'Visit site',
+              url: PROJECTS.climatefuture.website,
+            },
+            {
+              text: 'Github source',
+              url: PROJECTS.climatefuture.github,
+            },
+          ]}
+        >
+          {PROJECTS.climatefuture.description}
         </Project>
 
         <Project

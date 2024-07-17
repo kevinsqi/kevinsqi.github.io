@@ -4,11 +4,16 @@ import Page from '../components/Page';
 
 const IndexPage = () => (
   <Page title="Home">
-    <p className="text-2">
-      Software engineer at Gridmatic.
-      <br />
-      Based in the SF Bay Area.
-    </p>
+    <div className="row text-2">
+      <div className="col-12">
+        <p>I'm a software engineer that loves to design and build things.</p>
+        <p>
+          I'm deeply interested in climate and energy; I currently work on ML infra at{' '}
+          <a href="https://www.gridmatic.com">Gridmatic</a>, a startup trying to accelerate the
+          adoption of renewable energy on the grid.
+        </p>
+      </div>
+    </div>
     <hr className="mt-5" />
     <Projects className="mt-5" />
   </Page>

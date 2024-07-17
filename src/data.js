@@ -50,7 +50,7 @@ export const PROJECTS = {
       'See projected temperature and precipitation impact of climate change where you live, based on public data sources. Originated at Science Hack Day 2019. Built with React, NextJS, Postgres/PostGIS, and Docker.',
   },
   pianohub: {
-    website: 'https://www.pianohub.io',
+    website: 'https://www.pianohub.io/song',
     description:
       'Like codepen.io for songs. Easily create and share music using a piano roll interface. Built with React, NodeJS, Postgres, and Docker.',
   },
