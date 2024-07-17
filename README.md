@@ -2,6 +2,12 @@
 
 ## Developing
 
+Prerequisites:
+
+```
+brew install vips  # needed for sharp on M1 Mac
+```
+
 Develop in the `source` branch. The `master` branch contains the build artifacts of gatsby.
 
 Install gatsby and run:
