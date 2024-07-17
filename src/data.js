@@ -2,6 +2,7 @@ export const PROJECTS = {
   react_piano: {
     name: 'react-piano',
     github: 'https://github.com/kevinsqi/react-piano',
+    github_stars: 269,
     description:
       'An open source interactive piano component which supports custom sounds, touch/click/keyboard events, programmatic playback, and fully configurable styling. Published on npm.',
   },
@@ -9,8 +10,8 @@ export const PROJECTS = {
     name: 'react-circular-progressbar',
     npm: 'https://www.npmjs.com/package/react-circular-progressbar',
     github: 'https://github.com/kevinsqi/react-circular-progressbar',
-    github_stars: 528,
-    downloads_total: 2318933,
+    github_stars: 1078,
+    downloads_total: 50322812,
     description:
       'An open source circular progressbar for React, written in Typescript and extensively customizable. Built with React and SVG.',
   },
@@ -18,8 +19,8 @@ export const PROJECTS = {
     name: 'react-calendar-heatmap',
     npm: 'https://www.npmjs.com/package/react-calendar-heatmap',
     github: 'https://github.com/kevinsqi/react-calendar-heatmap',
-    github_stars: 620,
-    downloads_total: 227953,
+    github_stars: 1204,
+    downloads_total: 1977444,
     description:
       "An open source calendar heatmap inspired by Github's contribution graph. Built with React and SVG.",
   },
@@ -46,7 +47,7 @@ export const PROJECTS = {
     website: 'https://www.climatefuture.io',
     github: 'https://github.com/kevinsqi/climatefuture',
     description:
-      'A web app that shows you the projected impacts of climate change where you live, based on a collection of public data sources. Originated at Science Hack Day 2019. Built with React, NextJS, Postgres/PostGIS, and Docker.',
+      'See projected temperature and precipitation impact of climate change where you live, based on public data sources. Originated at Science Hack Day 2019. Built with React, NextJS, Postgres/PostGIS, and Docker.',
   },
   pianohub: {
     website: 'https://www.pianohub.io',

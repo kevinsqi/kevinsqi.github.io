@@ -12,9 +12,9 @@ import img_pianohub from './pianohub.png';
 function Projects({ className }) {
   return (
     <div className={className}>
-      <h2 className="h3 text-secondary">Projects</h2>
+      <h2 className="h3">Projects</h2>
 
-      <section className="mt-4">
+      <section className="mt-5">
         <Project
           name="PianoHub"
           image={img_pianohub}
@@ -88,6 +88,13 @@ function Projects({ className }) {
           name="react-piano"
           image={img_react_piano}
           links={[{ text: 'Github source', url: PROJECTS.react_piano.github }]}
+          badges={[
+            {
+              text: PROJECTS.react_piano.github_stars.toLocaleString(),
+              url: PROJECTS.react_calendar_heatmap.github,
+              IconComponent: MdStar,
+            },
+          ]}
         >
           {PROJECTS.react_piano.description}
         </Project>
