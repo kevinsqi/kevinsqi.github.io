@@ -1,19 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kevin Qi]]></title><description><![CDATA[Software engineer interested in open source and building intuitive interfaces. Based in San Francisco.]]></description><link>https://www.kevinqi.com</link><generator>RSS for Node</generator><lastBuildDate>Thu, 02 Jun 2022 02:22:16 GMT</lastBuildDate><item><title><![CDATA[Three talks that changed the way I think about programming]]></title><description><![CDATA[Here are a couple talks with “ah-ha” moments that made me think about programming in a new way. Cheng Lou — “On the Spectrum of Abstraction…]]></description><link>https://www.kevinqi.com/three-talks/</link><guid isPermaLink="false">https://www.kevinqi.com/three-talks/</guid><pubDate>Sun, 06 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Here are a couple talks with “ah-ha” moments that made me think about programming in a new way.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Kevin Qi]]></title><description><![CDATA[Software engineer interested in open source and building intuitive interfaces. Based in San Francisco.]]></description><link>https://www.kevinqi.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Jul 2024 06:21:58 GMT</lastBuildDate><item><title><![CDATA[Three talks that changed the way I think about programming]]></title><description><![CDATA[Here are a couple talks with “ah-ha” moments that made me think about programming in a new way. Cheng Lou — “On the Spectrum of Abstraction…]]></description><link>https://www.kevinqi.com/three-talks/</link><guid isPermaLink="false">https://www.kevinqi.com/three-talks/</guid><pubDate>Sun, 06 Jan 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Here are a couple talks with “ah-ha” moments that made me think about programming in a new way.&lt;/p&gt;
 &lt;h2&gt;Cheng Lou — “On the Spectrum of Abstraction”&lt;/h2&gt;
-
-          &lt;div
-            class=&quot;gatsby-resp-iframe-wrapper&quot;
-            style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden;margin-bottom: 1.0725rem&quot;
-          &gt;
-            &lt;iframe src=&quot;https://www.youtube.com/embed/mVVNJKv9esE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-          &quot;&gt;&lt;/iframe&gt;
-          &lt;/div&gt;
-          
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://www.youtube.com/embed/mVVNJKv9esE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
 &lt;p&gt;This talk is particularly useful for library and framework authors, as it delves into how to think about the level of abstraction a library should provide. That doesn’t sound widely applicable at first, but as complex client side apps emerge, it’s becoming more and more common for frontend developers to write generic component libraries and to have to think about what functionality and what abstractions they provide.&lt;/p&gt;
 &lt;p&gt;The idea that really resonated with me is the visualization of a tree of “use cases”, where leaf nodes are concrete use cases and parent nodes are the abstract tools that enable those use cases. If you create a tool that’s very specific and tailored, you only cover a few leaf nodes. If you create a tool that’s very abstract, you can potentially cover many leaf nodes, but there will then be additional layers of abstraction between the tool and the eventual leaf node use-case. A library should strike the balance between that immediate usefulness, and the ability to cover many “leaf nodes”. I found this to be an interesting and useful mental image to have.&lt;/p&gt;
 &lt;p&gt;Another core idea was that enforcing restrictions on expressivity can be a beneficial tool. The corollary to that idea is that increasing expressiveness can be a negative trade-off. The prime example is how React approaches rendering vs. the approach of using templates. Templates are “data” — they can be fully expressed as serializable data structures, whereas React rendering can utilize functions, which can’t be expressed as data. Cheng said that this was actually a concession, not an inherently desired trait, which was something that was unexpected and thought provoking. By restricting expressiveness by using templates, frameworks like Ember can apply performance optimizations that React cannot. But the expressiveness gained with functions was worth the tradeoff.&lt;/p&gt;
@@ -25,20 +12,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;She suggests re-introducing duplication by inlining the abstracted code back into every caller. This approach is interesting because it’s rather obvious in principle, but something that I wouldn’t have thought of when approaching a particular chunk of over-shared code in practice.&lt;/p&gt;
 &lt;h2&gt;Gary Bernhardt — “Boundaries”&lt;/h2&gt;
-
-          &lt;div
-            class=&quot;gatsby-resp-iframe-wrapper&quot;
-            style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden;margin-bottom: 1.0725rem&quot;
-          &gt;
-            &lt;iframe src=&quot;https://www.youtube.com/embed/yTkzNHF6rMs&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-          &quot;&gt;&lt;/iframe&gt;
-          &lt;/div&gt;
-          
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://www.youtube.com/embed/yTkzNHF6rMs&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
 &lt;p&gt;This talk covers a wide range of concepts: “functional core vs. imperative shell”, immutability, and parallelism. The concept I found most immediately applicable were Gary’s thoughts about integration tests vs. unit tests and mocking/stubbing.&lt;/p&gt;
 &lt;p&gt;Going into the talk, I was strongly on board with integration testing as the best primary means of testing. However, Gary’s illustration of the exponential “path count” that’s inherent to integration testing and the increased cost in test suite runtime are solid arguments against an extremely integration-heavy approach, and are problems that I’ve run into in my own experience as well.&lt;/p&gt;
 &lt;p&gt;Instead, Gary suggests a balanced approach to unit and integration testing. This is the slide that really nailed down the concept:&lt;/p&gt;
@@ -55,7 +29,7 @@
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAACY0lEQVQoz22SS08TUQBG55+4YUViYowrE12YuELCRo0RDAtj1MQFCzUGVCAgopCASgFNCvJ+06b0QaEz7Uw77bSdR6ft0FIK4i85poMaNS5OcnMXX+73nSv4I0FCkTW2tmdZXPDw1TuGxzNKTNylXrNxHIOyo+McGNTqJerHZWpHRQ5r9n8oIshKhJj3Jcu9DxDn+4hMPiO8PkY0GsKMR9kL+4mGfS4peY+cJlMsZt3go5/hR/WSS+MsROYW0fqfY4z1Y40P4EwNsdXbjZiUOKxapBJRMpk4yv4O8n6IpBJDz6cw8klsI4VdyKDnk5iGSvXQRoh451hqu85MewtdVy7guXWND61tiGocJ5+iZGbcqiVTxUzuUjZVinoSIxmlZJ2FVKoWlYrp1hZ825s8uX2DxzdbaL96mfZLF+nq7CClxikbabdWo87J9yq6tEPav0QmsEwhE6P+7YBazXar/kKIxUVEOY6oJEhpGUQ5wXbAjyxFsBQRaX8HKRbEtjXqp5WzvU6c3/v9K0iYHnnNxuw4Cx8HmX7zAt/CBJ7hHsKBVQ5KeaS9HaT9IPFdP6oURjfSqIldNFUkl5VdGrM0NiwUNITJd934FyaYGurhXmsLW/OTeMf6CAfXOKra5FWJYimPlU2g+JZQQhtoYhBDT2KZaRxHd19WPSycSRl5dp/1L+951NlB07kmPg0PsPx5mMD6HKWM4po+Pq1Q1hWywRXUjRmyoVVykQ2q5dzZjn98HeFuczOewac87LzD+aYm5jxvmR59xeaKl7JjYNkaVkHDstIYORmzYbthOa+4dwVb+4sfJkl1IpHJP/kAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAACcUlEQVR42k2SS08TYRiF+0/ciAsWujGuNGHhxhgwcUGU1JhocGGMiYkYIUokoEQwiNGCigIWkEuhVHqndNpOO+20nZneptALRf0lj18HYlicnGTe5My5fDZP0EcguMaWe4HlpU8szk8x43hHVArTbJQxqzqmqVMV3Dg0OWxVaTQr1MXtNBrNMrV6GVtCDhCZG2J1uJ+o8xVBxwCBjfeEwwH0WJjdwDZhv4DgVGKXnJqgXM5Zws0T8ab4URv1tmBwcYnsyDOM6REK06Psz75ha3gQKRWjXiuQiodRMzHkiJdExE8yuYemKej5JEUtRamoouVTFIw0tVoJW+DbAks9V5m7fY3Hl8/z8WYX0z03kNIJqrkUlYJKo2UKTmMkQ5iGQjkvoyfDmMWMFfegVrRgRXZvuXh0q4eHvd3Yu65gv3SRJ/fuoihxTD1txWqKWEd/62hRL+lfK2R2VillJA5/H9Cw+quIfivHkfdiUaKJGJIcJ6VmiAp273iQpRAFWdx2vUgRH6VSltaf2nFfR/v/+zs9kOXw8+RLXPPTOD+MMjv2nG2xtGN8iKB3nf2KhnQiGAt5UKJ+NOFaiYdQFYlcNiEgUzFUDF2hWMxim3k7hGdZiIwNYu++jts5w/cpsbbfReOgSD4do2xqFLJx5O0VZJ8LVfKha8dDVKvGscN6STgUo0w+vc/G1wke3Onj7JkOHBNj/PwyjtflpKLKYumS1Z8phsj61lA2F8j618kFXdSqeVqix+bJ02nHt/V1duJ4PUC/vZcL5zr44RhndvIFm6vzVIQzo71uIYMh1tVycXQ9ZT0ZLZ+wvhli6fa90Gbh+B92AnUyAlWdcwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
