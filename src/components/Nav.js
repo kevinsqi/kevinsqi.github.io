@@ -18,10 +18,16 @@ const Nav = (props) => (
           <a href={'/assets/resume/resume_kevin_qi.pdf'} className="NavLink display-font">
             Resume
           </a>
-          */}
-        <Link to="/blog" className="NavLink display-font" activeClassName="NavLink--active" exact>
+          <Link to="/blog" className="NavLink display-font" activeClassName="NavLink--active" exact>
+            Blog
+          </Link>
+        */}
+        <a
+          href="https://www.notion.so/kevinqi/Blog-Kevin-Qi-1cd8b1b382e04f5bbb9c1acb27f6796e"
+          className="NavLink display-font"
+        >
           Blog
-        </Link>
+        </a>
         <a href="https://www.linkedin.com/in/kevin-qi-25b76710/" className="NavLink display-font">
           LinkedIn
         </a>
