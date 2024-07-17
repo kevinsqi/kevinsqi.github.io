@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Kevin Qi`,
     author: `Kevin Qi`,
-    description: `Software engineer interested in open source and building intuitive interfaces. Based in San Francisco.`,
+    description: `Software engineer working on ML infra at Gridmatic.`,
     siteUrl: `https://www.kevinqi.com`,
   },
   plugins: [
