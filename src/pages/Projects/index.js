@@ -13,10 +13,6 @@ function Projects({ className }) {
   return (
     <div className={className}>
       <h2 className="h3">Projects</h2>
-      <p className="text-3 mt-3">
-        I've published a few React libraries to npm, and have side projects relating to music and
-        climate.
-      </p>
 
       <section className="mt-5">
         <Project
