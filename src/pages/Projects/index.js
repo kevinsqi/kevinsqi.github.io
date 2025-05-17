@@ -68,23 +68,6 @@ function Projects({ className }) {
         </Project>
 
         <Project
-          name="ClimateFuture"
-          image={img_climatefuture}
-          links={[
-            {
-              text: 'Visit site',
-              url: PROJECTS.climatefuture.website,
-            },
-            {
-              text: 'Github source',
-              url: PROJECTS.climatefuture.github,
-            },
-          ]}
-        >
-          {PROJECTS.climatefuture.description}
-        </Project>
-
-        <Project
           name="react-piano"
           image={img_react_piano}
           links={[{ text: 'Github source', url: PROJECTS.react_piano.github }]}
@@ -108,6 +91,19 @@ function Projects({ className }) {
           ]}
         >
           {PROJECTS.microharmonic.description}
+        </Project>
+
+        <Project
+          name="ClimateFuture"
+          image={img_climatefuture}
+          links={[
+            {
+              text: 'Github source',
+              url: PROJECTS.climatefuture.github,
+            },
+          ]}
+        >
+          {PROJECTS.climatefuture.description}
         </Project>
       </section>
     </div>
