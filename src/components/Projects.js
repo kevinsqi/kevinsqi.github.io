@@ -14,8 +14,8 @@ function Projects({ className }) {
           image="/assets/projects/pianohub.png"
           links={[
             {
-              text: 'Visit site',
-              url: PROJECTS.pianohub.website,
+              text: 'Github source',
+              url: PROJECTS.pianohub.github,
             },
           ]}
         >
