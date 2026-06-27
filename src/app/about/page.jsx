@@ -1,10 +1,14 @@
 import React from 'react';
 
-import Page from '../components/Page';
-import { PROJECTS } from '../data';
+import Page from '../../components/Page';
+import { PROJECTS } from '../../data';
+
+export const metadata = {
+  title: 'About',
+};
 
 const About = () => (
-  <Page title="About">
+  <Page>
     <div className="row">
       <div className="col-12 col-md-10">
         <h2 className="h3 text-secondary">About</h2>

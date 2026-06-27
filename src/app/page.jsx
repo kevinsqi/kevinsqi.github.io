@@ -1,9 +1,10 @@
 import React from 'react';
-import Projects from './Projects';
+
 import Page from '../components/Page';
+import Projects from '../components/Projects';
 
 const IndexPage = () => (
-  <Page title="Home">
+  <Page>
     <div className="row text-2">
       <div className="col-12">
         <p>

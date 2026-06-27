@@ -1,13 +1,7 @@
 import React from 'react';
 import { MdFileDownload, MdStar } from 'react-icons/md';
 
-import { PROJECTS } from '../../data';
-import img_react_piano from './react_piano.png';
-import img_react_circular_progressbar from './react_circular_progressbar.png';
-import img_react_calendar_heatmap from './react_calendar_heatmap.png';
-import img_microharmonic from './microharmonic.png';
-import img_climatefuture from './climatefuture.png';
-import img_pianohub from './pianohub.png';
+import { PROJECTS } from '../data';
 
 function Projects({ className }) {
   return (
@@ -17,7 +11,7 @@ function Projects({ className }) {
       <section className="mt-5">
         <Project
           name="PianoHub"
-          image={img_pianohub}
+          image="/assets/projects/pianohub.png"
           links={[
             {
               text: 'Visit site',
@@ -29,7 +23,7 @@ function Projects({ className }) {
         </Project>
         <Project
           name="react-circular-progressbar"
-          image={img_react_circular_progressbar}
+          image="/assets/projects/react_circular_progressbar.png"
           badges={[
             {
               text: PROJECTS.react_circular_progressbar.github_stars.toLocaleString(),
@@ -49,7 +43,7 @@ function Projects({ className }) {
 
         <Project
           name="react-calendar-heatmap"
-          image={img_react_calendar_heatmap}
+          image="/assets/projects/react_calendar_heatmap.png"
           badges={[
             {
               text: PROJECTS.react_calendar_heatmap.github_stars.toLocaleString(),
@@ -69,12 +63,12 @@ function Projects({ className }) {
 
         <Project
           name="react-piano"
-          image={img_react_piano}
+          image="/assets/projects/react_piano.png"
           links={[{ text: 'Github source', url: PROJECTS.react_piano.github }]}
           badges={[
             {
               text: PROJECTS.react_piano.github_stars.toLocaleString(),
-              url: PROJECTS.react_calendar_heatmap.github,
+              url: PROJECTS.react_piano.github,
               IconComponent: MdStar,
             },
           ]}
@@ -84,7 +78,7 @@ function Projects({ className }) {
 
         <Project
           name="microharmonic"
-          image={img_microharmonic}
+          image="/assets/projects/microharmonic.png"
           links={[
             { text: 'Visit site', url: 'https://www.microharmonic.com' },
             { text: 'Github source', url: PROJECTS.microharmonic.github },
@@ -95,7 +89,7 @@ function Projects({ className }) {
 
         <Project
           name="ClimateFuture"
-          image={img_climatefuture}
+          image="/assets/projects/climatefuture.png"
           links={[
             {
               text: 'Github source',
@@ -110,7 +104,7 @@ function Projects({ className }) {
   );
 }
 
-const Project = ({ name, image, url, badges, links, children }) => {
+const Project = ({ name, image, badges, links, children }) => {
   const primaryLink = links[0];
   const img = (
     <img className="img-fluid rounded mb-3" src={image} alt={`${name} project screenshot`} />

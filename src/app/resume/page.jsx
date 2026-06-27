@@ -1,11 +1,15 @@
 import React from 'react';
 import { MdFileDownload, MdStar } from 'react-icons/md';
 
-import Page from '../components/Page';
-import { PROJECTS } from '../data';
+import Page from '../../components/Page';
+import { PROJECTS } from '../../data';
+
+export const metadata = {
+  title: 'Resume',
+};
 
 const Resume = () => (
-  <Page title="Resume" columnClassName="col-12">
+  <Page columnClassName="col-12">
     <div className="text-secondary small alert alert-secondary mb-4 hide-for-printing">
       To save this as a PDF, open the Print dialog and select "Save as PDF".
     </div>
@@ -243,7 +247,7 @@ function Job({ name, position, startDate, endDate, children }) {
       <p className="small text-muted">
         {position ? `${position}, ` : null}
         {startDate}
-        {endDate ? `–${endDate}` : null}
+        {endDate ? `-${endDate}` : null}
       </p>
 
       {children}

@@ -5,20 +5,28 @@
 Prerequisites:
 
 ```
-brew install vips  # needed for sharp on M1 Mac
+nvm use
 ```
 
-Develop in the `source` branch. The `master` branch contains the build artifacts of gatsby.
-
-Install gatsby and run:
+Install dependencies and run the Next dev server:
 
 ```
 yarn install
-yarn start
+yarn dev
 ```
 
-The server will be running on `localhost:8000`.
+The server will be running on `localhost:3000`.
+
+## Building
+
+```
+yarn build
+```
+
+Next writes the static export to `out/`.
 
 ## Deploying
 
-Run `yarn run deploy`.
+Push to `main`. GitHub Actions builds the static export and deploys `out/` to GitHub Pages.
+
+In the repository's GitHub Pages settings, set the publishing source to GitHub Actions.

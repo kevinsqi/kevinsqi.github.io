@@ -36,7 +36,7 @@ Going into the talk, I was strongly on board with integration testing as the bes
 
 Instead, Gary suggests a balanced approach to unit and integration testing. This is the slide that really nailed down the concept:
 
-![boundaries slide](./boundaries-slide.png)
+![boundaries slide](/assets/blog/three-talks/boundaries-slide.png)
 
 Gary’s argument here is that you put all your “decisions” in a functional core — the stuff that also tends to lead to an exponential explosion in testing paths. And you unit test that, because unit testing is fast and well-suited for testing multiple paths.
 
