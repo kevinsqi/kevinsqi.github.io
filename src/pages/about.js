@@ -23,7 +23,7 @@ const About = () => (
           </p>
           <p>
             I'm also interested in music, machine learning, and climate change prevention. My most
-            recent project, <a href={PROJECTS.climatefuture.website}>ClimateFuture</a>, shows people
+            recent project, <a href={PROJECTS.climatefuture.github}>ClimateFuture</a>, shows people
             the future impact of climate change where they live.
           </p>
         </div>

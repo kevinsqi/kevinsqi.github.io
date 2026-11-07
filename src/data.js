@@ -48,7 +48,6 @@ export const PROJECTS = {
       'Treatment report functionality on native PatientsLikeMe iOS app, with useful info on cost, effectiveness, side effects, and patient evaluations. Built with Swift.',
   },
   climatefuture: {
-    website: 'https://www.climatefuture.io',
     github: 'https://github.com/kevinsqi/climatefuture',
     tagline: 'Projected impact of climate change where you live',
     description:
