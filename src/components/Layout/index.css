@@ -98,6 +98,97 @@ a:hover {
   border-bottom: 2px solid #3e98c7;
 }
 
+/* Projects */
+
+.ProjectGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 50px;
+}
+
+.Project {
+  display: flex;
+  gap: 20px;
+  color: #707070;
+  letter-spacing: -0.3px;
+  text-decoration: none;
+}
+
+.Project:hover {
+  color: #707070;
+}
+
+.Project:hover .Project-name {
+  text-decoration: underline;
+}
+
+.Project-image {
+  flex: none;
+  width: 200px;
+  height: 134px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 7px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+}
+
+.Project-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.Project-description {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.Project-name {
+  color: #333;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.Project-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+.Project-stat svg {
+  margin-right: 3px;
+  vertical-align: -2px;
+}
+
+@media (max-width: 800px) {
+  .ProjectGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .Project-image {
+    width: 160px;
+    height: 107px;
+  }
+
+  .Project-description {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .Project-image {
+    width: 120px;
+    height: 80px;
+  }
+
+  .Project-description {
+    font-size: 1.1rem;
+  }
+}
+
 /* Resume */
 
 .ResumeHeader {
