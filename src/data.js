@@ -3,6 +3,7 @@ export const PROJECTS = {
     name: 'react-piano',
     github: 'https://github.com/kevinsqi/react-piano',
     github_stars: 269,
+    tagline: 'An interactive piano component for React',
     description:
       'An open source interactive piano component which supports custom sounds, touch/click/keyboard events, programmatic playback, and fully configurable styling. Published on npm.',
   },
@@ -12,6 +13,7 @@ export const PROJECTS = {
     github: 'https://github.com/kevinsqi/react-circular-progressbar',
     github_stars: 1078,
     downloads_total: 50322812,
+    tagline: 'A customizable circular progressbar for React',
     description:
       'An open source circular progressbar for React, written in Typescript and extensively customizable. Built with React and SVG.',
   },
@@ -21,11 +23,13 @@ export const PROJECTS = {
     github: 'https://github.com/kevinsqi/react-calendar-heatmap',
     github_stars: 1204,
     downloads_total: 1977444,
+    tagline: "A calendar heatmap inspired by Github's contribution graph",
     description:
       "An open source calendar heatmap inspired by Github's contribution graph. Built with React and SVG.",
   },
   microharmonic: {
     github: 'https://github.com/kevinsqi/microharmonic',
+    tagline: 'Build and play scales outside the standard 12 notes',
     description:
       'A microtone keyboard app which lets you build and play scales outside the standard 12-note scale. Built with React and the web audio API.',
   },
@@ -45,11 +49,13 @@ export const PROJECTS = {
   },
   climatefuture: {
     github: 'https://github.com/kevinsqi/climatefuture',
+    tagline: 'Projected impact of climate change where you live',
     description:
       'See projected temperature and precipitation impact of climate change where you live, based on public data sources. Originated at Science Hack Day 2019. Built with React, NextJS, Postgres/PostGIS, and Docker.',
   },
   pianohub: {
     website: 'https://www.pianohub.io/song',
+    tagline: 'Like codepen.io for songs, with a piano roll interface',
     description:
       'Like codepen.io for songs. Easily create and share music using a piano roll interface. Built with React, NodeJS, Postgres, and Docker.',
   },

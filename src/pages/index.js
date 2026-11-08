@@ -3,7 +3,7 @@ import Projects from './Projects';
 import Page from '../components/Page';
 
 const IndexPage = () => (
-  <Page title="Home">
+  <Page title="Home" columnClassName="col-12">
     <div className="row text-2">
       <div className="col-12">
         <p>
@@ -13,7 +13,6 @@ const IndexPage = () => (
         </p>
       </div>
     </div>
-    <hr className="mt-5" />
     <Projects className="mt-5" />
   </Page>
 );
